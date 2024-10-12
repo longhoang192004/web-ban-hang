@@ -1,0 +1,237 @@
+.admin{
+    background-color: var(--dark-color);
+}
+.side-bar{
+    background-color: rgb(55, 61, 76);
+    
+}
+.side-bar .icon {
+    margin-right:  10px;
+    color: var(--white-color) ;
+}
+.sb-content{
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+/*Dashboard*/
+.admin .sb-content{
+    overflow-y: auto;
+    overflow-x: none;
+    height: calc(100vh - 245px);
+}
+.overview{
+    margin-top: 20px;
+}
+.overview .box{
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.overview .box .box-info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: var(--white-color);
+    min-width: 31%;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+.overview .box .box-info i{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.detail-dashboard .overview .box-info:nth-child(1) i{
+    background-color: #ADD8E6;
+}
+.detail-dashboard .overview .box-info:nth-child(2) i{
+    background-color: #fff9de;
+}
+.detail-dashboard .overview .box-info:nth-child(3) i{
+    background-color: #ffd3d3;
+    padding: 20px 30px;
+}
+.detail-dashboard .overview .box-info h3{
+    font-size: 25px;
+}
+.detail-dashboard .overview .box-info p{
+    font-size: 14px;
+}
+
+.admin .menu-detail .detail-dashboard .statistical .chart{
+    margin-top: 40px;
+    background-color: var(--white-color);
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}   
+
+/*PRODUCT & ORDER & USER*/
+.detail-product .my-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.detail-product .create-product{
+    background-color: rgb(31, 31, 207);
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 3px 0px rgb(1, 1, 79);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.detail-product .create-product p{
+    margin: 0 5px;
+    font-size: 11px;
+}
+.detail-product .product-content,
+.detail-order .order-content,
+.detail-user .user-content{
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.search-detail{
+    position: relative;
+    width: 300px;
+    margin: 15px 10px;
+    padding-top: 15px;
+}
+.search-detail input{
+    width: 267px;
+    height: 34px;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 2px 0px 2px 6px;
+    box-sizing: border-box;
+    border-width: 1px;
+}
+.search-detail button{
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 34px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(31, 31, 207);
+    color: var(--white-color);
+    border: none;
+}
+.table-pou{
+    font-family: Arial, Helvetica, sans-serif;  
+    text-align: center;
+    border-top: 1px solid gray;
+}   
+.table-pou th{
+    font-size: 13px;
+    padding: 10px;
+    
+}
+.table-pou td{
+    padding: 7px;
+}
+.table-pou tr:hover{
+    background-color:rgb(165, 201, 239)
+}
+.table-pou thead tr{
+    background-color: white !important;
+}
+.table-pou tr:nth-child(even){
+    background-color: #ffffff;
+}
+.table-pou tr:nth-child(odd){
+    background-color: #f4f4f4;
+}
+.product-content .table-pou .brand{
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+}
+.product-content .table-pou .brand > div{
+    text-align: left;
+    margin-left: 10px;
+}
+.order-content .table-pou .adress{
+    text-align: left;
+}
+.table-pou .brand span:first-child
+{
+    font-size: 12px;
+}
+.table-pou .brand span:last-child
+{
+    color: var(--gray-color);
+}
+.table-pou .brand img{
+    width: 40px;
+    height: 50px;
+    object-fit: cover;
+}
+.product-content .table-pou .actions i,
+.user-content .table-pou .actions i
+{
+    cursor: pointer;
+    margin-left: 8px;
+}
+.product-content .table-pou .actions a:hover{
+    background-color: rgb(40, 40, 183);
+    color:white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nums-page,
+.order-nums-page,
+.user-nums-page{
+    text-align: right;
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 10px;
+}
+.nums-page button,
+.order-nums-page button,
+.user-nums-page button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+}
+.num-page.active,
+.order-num-page.active,
+.user-num-page.active{
+    color: var(--white-color);
+    background-color: rgb(26, 111, 202);
+    outline: none;  
+}
+.page,
+.order-page,
+.user-page{
+    display: none;
+}
+.user-content .info-user .avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-right: 8px;
+}
+.user-content .info-user,
+.user-content .email-user{
+    text-align: left;
+}
+
+.containeradmin{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}

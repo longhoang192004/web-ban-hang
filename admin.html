@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="icon" type="image/x-icon" href="./img/banner/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="./reponsiveadmin.css">
+    <link rel="stylesheet" href="./baseadmin.css">
+    <link rel="stylesheet" href="./accountadmin.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./menuphu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!---------------------------------------------------RESPONSIVE--------------------------------------------------->
+    <style>
+                  @media only screen and (max-width: 63.9375em) {
+                    *{
+                      padding: 0;
+                      margin: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    html{
+                      font-size: 62.5%;
+                    }
+                    
+                    body{
+                      font-family: 'Montserrat', sans-serif;
+                      width: 100%;
+                      height: max-content;
+                      line-height: 1;
+                      font-weight: 400;
+                      color: #555;
+                    }
+
+                    .header {
+                      flex-direction: column;
+                      align-items: center;
+                      height: 220px;
+                      width: 100%;
+                      padding: 0rem;
+                  }
+
+                  .header-left {
+                      flex-direction: column;
+                      align-items: center;
+                  }
+
+                  .header-logo{
+                      position: absolute;
+                      align-items: center;
+                      height: 300px;
+                      width: 35rem;
+                      z-index: 1;
+                  }
+                  
+                  .logo{
+                    height: 30rem;
+                    z-index: 1;
+                  }
+
+                  .section-hero{
+                    display: none;
+                  }
+
+                  .main-nav {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                      width: 100%;
+                      text-align: right;
+                      z-index: 2;
+
+                  }
+                  .youraccount{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 30px;
+                    float: right;
+                    vertical-align: top;
+                    position: fixed;
+                    top: 0;
+                    right: 10px;
+                    z-index: 2;
+
+                  }
+
+                  .main-nav-list {
+                    z-index: 2;
+                      flex-direction: row;
+                      padding-right: 0;
+                      align-items: center;
+                      gap: 3px;
+                      width: 95%;
+                  }
+
+                  .main-nav-link {
+                    font-size: 10px;
+                  }
+
+                  .youraccount {
+                      width: 24px;
+                      height: 24px;
+                  }
+
+                  .containeradmin{
+                    padding-top: 5%;
+                  }
+
+
+
+
+
+
+
+
+
+
+                  .grid {
+                    display: block;
+                  }
+
+                  .logo-col,
+                  .address-col,
+                  .nav-col {
+                    flex-direction: column;
+                    margin-top: 2rem;
+                  }
+
+                  .footer-heading {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                  }
+
+                  .footer-nav li a,
+                  .contact,
+                  .social {
+                    font-size: 1.2rem;
+                  }
+
+                  .contact p {
+                    margin-top: 1rem;
+                  }
+
+                  .social {
+                    font-size: 1.2rem;
+                  }
+
+                  .social p {
+                    margin-top: 0;
+                  }
+
+                  .qr-code {
+                    width: 5rem;
+                    height: 5rem;
+                  }
+
+                  .footer-app-mac,
+                  .footer-app-android {
+                    height: 2rem;
+                  }
+                  .header img {
+                    height: 20rem;
+                    width: 25rem;
+                  }
+                  .main-nav-list {
+                      display: none;
+                      z-index: 2;
+                        flex-direction: row;
+                        padding-right: 0;
+                        align-items: center;
+                        gap: 2px;
+                        width: 95%;
+                    }
+                    #menu-icon {
+                      position: fixed;
+                      top: 0;
+                      right: 0;
+                      display: block;
+                     }
+      
+                     #sidebar.sidebar{
+                        height: 28rem;
+                     }
+                  
+                     .sidebar.active{
+                        height: 28rem;
+                     }
+                     .sidebar{
+                      padding-top: 10px;
+                      height: 40%;
+                     }
+                
+                     .sidebar-link{
+                      font-size: 1.5rem;
+                     }
+
+            }
+    </style>
+
+
+
+    <style>
+              form.example input[type=text] {
+                padding: 10px;
+                font-size: 17px;
+                border: 1px solid grey;
+                float: left;
+                width: 80%;
+                background: #f1f1f1;
+              }
+            
+              form.example button {
+                float: left;
+                width: 20%;
+                padding: 10px;
+                background: #2196F3;
+                color: white;
+                font-size: 17px;
+                border: 1px solid grey;
+                border-left: none;
+                cursor: pointer;
+              }
+            
+              form.example button:hover {
+                background: #0b7dda;
+              }
+            
+              form.example::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+            
+     </style>
+     <script src="./menuphu.js"></script>
+
+
+
+</head>
+<body>
+    <!-- Header -->
+    <!-- -------------------------------Header---------------------------- -->
+
+    <header class="header">
+      <a href="./main.html" class="logo header-logo"><img class="logo header-logo"
+          src="./img/header/HLL_STORE-removebg-preview.png"
+         ></a>
+         <a class="youraccount" href="./taikhoan.html"><img src="./img/admin/noavatar.png" alt="" class="youraccount"></a>
+      <nav class="main-nav">
+          <ul class="main-nav-list">
+              <li><a class="main-nav-link nav-cta" href="./dangnhap.html">Đăng nhập</a></li>
+              
+          </ul>
+          <div id="menu-icon">&#9776;</div>
+      </nav>
+  </header>
+  <div id="sidebar" class="sidebar">
+    <ul class="sidebar-list">
+        <li><a class="sidebar-link" href="./aboutus.html">About us</a></li>
+        <li><a class="sidebar-link" href="./lienhe.html">Liên hệ</a></li>
+        <li><a class="sidebar-link" href="./dangky.html">Đăng kí</a></li>
+        <li><a class="sidebar-link" href="./dangnhap.html">Đăng nhập</a></li>
+        <li><a class="sidebar-link" href="./taikhoan.html">Your account</a></li>
+    </ul>
+  </div>
+
+  
+  <!-- -------------------------------END Header---------------------------- -->
+
+
+    <div class="containeradmin" style="background-color: rgb(247, 199, 199);">
+        <div class="row admin">
+            <div class="col-lg-4 col-12 side-bar" style="background-color: rgb(109, 64, 48);">
+                <div class="heading">
+                    <img src="./img/admin/noavatar.png" alt="" class="heading-img" style="width: 60px; height: 60px;border-radius:30px">
+                    <span class="heading-name_acc">ADMIN</span>
+                </div>
+                <div class="menu-manager">
+                    <div class="my-profile item-manager active">
+                        <div class="my-profile-title ">
+                            <div class="icon"><i class="fas fa-th-large"></i></div>
+                            <div class="name">Dashboard</div>
+                        </div>
+                    </div>
+                    <div class="my-password item-manager">
+                        <div class="my-password-title">
+                            <div class="icon"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="name">Products</div>
+                        </div>
+                    </div>
+                    <div class="my-order item-manager">
+                        <div class="my-order-title">
+                            <div class="icon"><i class="far fa-calendar-check"></i></div>
+                            <div class="name">Orders</div>
+                        </div>
+                    </div>
+                    <div class="my-listlike item-manager">
+                        <div class="my-listlike-title">
+                            <div class="icon"><i class="fas fa-user"></i></div>
+                            <div class="name">Users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-8 col-12 sb-content">
+                <div class="menu-detail ">
+                    <div class="detail-dashboard item-detail active">
+                        <div class="my-heading">
+                            <h1>DASHBOARD</h1>
+                        </div>
+                        <div class="overview">
+                            <h2>Overview</h2>
+                            <div class="row box">
+                                <div class="box-info col-lg-3 col-sm-8">
+                                    <i class="far fa-calendar-check"></i>
+                                    <div class="info">
+                                        <h3>663</h3>
+                                        <p>New Orders</p>
+                                    </div>
+                                </div>
+                                <div class="box-info col-lg-3 col-sm-8">
+                                    <i class="fas fa-users"></i>
+                                    <div class="info">
+                                        <h3>1112</h3>
+                                        <p>Visitor</p>
+                                    </div>
+                                </div>
+                                <div class="box-info col-lg-3 col-sm-8">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <div class="info">
+                                        <h3>$4012</h3>
+                                        <p>Total sales</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statistical">
+                                    <div class="chart">
+                                        <h2>Doanh số bán hàng</h2>
+                                        <canvas id="salesChart"></canvas>
+                                    </div>
+                                    <div class="chart">
+                                        <h2>Lượng truy cập</h2>
+                                        <canvas id="visitorsChart"></canvas>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-product item-detail">
+                      <div class="my-heading">
+                          <h1>PRODUCT</h1>
+                          <div class="create-product row">
+                            <i class="fas fa-plus"></i>
+                            <p>CREATE</p>
+                          </div>
+                      </div>
+                      <div class="product-content">
+                          <form action="" class="search-detail">
+                            <input type="text" name="search_" placeholder="Search everything...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                          </form>
+                          <div class="page" id="page1" style="display:block;">
+                            <table class="table-pou col-lg-12">
+                              <thead>
+                                <tr>
+                                  <th class="col-2">STT</th>
+                                  <th style="text-align: left;" class="col-4">Sản Phẩm</th>
+                                  <th class="col-2">Đơn Giá</th>
+                                  <th class="col-2">Số lượng</th>
+                                  <th class="col-2">Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td class="id">#1</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#2</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#3</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="id">#4</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#5</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#6</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#7</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#8</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="id">#9</td>
+                                    <td class="brand">
+                                      <img src="./img/smartphone/OP A78.png" alt="">
+                                      <div>
+                                        <span>IPHONE 15</span> 
+                                        <br> 
+                                        <span>điện thoại</span>
+                                      </div>
+                                    </td>
+                                    <td class="price">10.000.000đ</td>
+                                    <td class="quanity">128</td>
+                                    <td class="actions">
+                                      <a href="/main.html">Details</a>
+                                      <i class="edit far fa-edit"></i>
+                                      <i class="delete fas fa-trash"></i>
+                                    </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="page" id="page2">
+                            <table class="table-pou col-lg-12">
+                              <thead>
+                                <tr>
+                                  <th class="col-2">STT</th>
+                                  <th style="text-align: left;" class="col-4">Sản Phẩm</th>
+                                  <th class="col-2">Đơn Giá</th>
+                                  <th class="col-2">Số lượng</th>
+                                  <th class="col-2">Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="id">#10</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#11</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#12</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#13</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#14</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#15</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#16</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#17</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="page" id="page3">
+                            <table class="table-pou col-lg-12">
+                              <thead>
+                                <tr>
+                                  <th class="col-2">STT</th>
+                                  <th style="text-align: left;" class="col-4">Sản Phẩm</th>
+                                  <th class="col-2">Đơn Giá</th>
+                                  <th class="col-2">Số lượng</th>
+                                  <th class="col-2">Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="id">#18</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#19</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#20</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#21</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#22</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#23</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="id">#24</td>
+                                  <td class="brand">
+                                    <img src="./img/smartphone/OP A78.png" alt="">
+                                    <div>
+                                      <span>IPHONE 15</span> 
+                                      <br> 
+                                      <span>điện thoại</span>
+                                    </div>
+                                  </td>
+                                  <td class="price">10.000.000đ</td>
+                                  <td class="quanity">128</td>
+                                  <td class="actions">
+                                    <a href="/main.html">Details</a>
+                                    <i class="edit far fa-edit"></i>
+                                    <i class="delete fas fa-trash"></i>
+                                  </td>
+                                </tr>
+                                 
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="nums-page">
+                             <button class="previousPage"><i class="fas fa-chevron-left"></i></button>
+                             <button class="num-page active" page-data="1">1</button>
+                             <button class="num-page" page-data="2">2</button>
+                             <button class="num-page" page-data="3">3</button>
+                             <button class="nextPage"><i class="fas fa-chevron-right"></i></button>
+                          </div>
+                      </div>
+                      
+                    </div>
+
+                  <div class="detail-order item-detail">
+                    <div class="my-heading">
+                      <h1>ORDER</h1>
+                    </div>
+                    <div class="order-content">
+                      <form action="" class="search-detail">
+                        <input type="text" name="search_" placeholder="Search everything...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                      <div class="order-page" id="order-page1" style="display:block;">
+                        <table class="table-pou col-lg-12">
+                          <thead>
+                            <tr>
+                              <th class="col-1">ID</th>
+                              <th class="col-3">Khách Hàng</th>
+                              <th class="col-3">Địa chỉ</th>
+                              <th class="col-2">Số lượng SP</th>
+                              <th class="col-2">Tổng Tiền</th>
+                              <th class="col-1">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                <td class="id">#1</td>
+                                <td>Huỳnh Hoàng Hải Long</td>
+                                <td class="adress">49/3 Bùi Xuân Phái, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">5</td>
+                                <td class="total-price">25.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#2</td>
+                                <td>Nguyễn Thanh Ly Ly</td>
+                                <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">3</td>
+                                <td class="total-price">65.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#3</td>
+                                <td>Ngọc Hoàn</td>
+                                <td class="adress">34 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">1</td>
+                                <td class="total-price">10.210.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#4</td>
+                                <td>Nguyễn Thanh Ly</td>
+                                <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">3</td>
+                                <td class="total-price">65.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#5</td>
+                                <td>Nguyễn Thanh</td>
+                                <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">3</td>
+                                <td class="total-price">65.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#6</td>
+                                <td>Trương Tín</td>
+                                <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">3</td>
+                                <td class="total-price">65.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#7</td>
+                                <td>Minh Thư</td>
+                                <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">3</td>
+                                <td class="total-price">65.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td class="id">#8</td>
+                                <td>Nguyễn Thanh Luy Ly</td>
+                                <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                                <td class="quanity-prduct">3</td>
+                                <td class="total-price">65.600.000đ</td>
+                                <td class="actions">
+                                  <a href="">Details</a>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="order-page" id="order-page2">
+                        <table class="table-pou col-lg-12">
+                          <thead>
+                            <tr>
+                              <th class="col-1">ID</th>
+                              <th class="col-3">Khách Hàng</th>
+                              <th class="col-3">Địa chỉ</th>
+                              <th class="col-2">Số lượng SP</th>
+                              <th class="col-2">Tổng Tiền</th>
+                              <th class="col-1">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="id">#9</td>
+                              <td>Huỳnh Hoàng Hải Long</td>
+                              <td class="adress">49/3 Bùi Xuân Phái, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">5</td>
+                              <td class="total-price">25.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#10</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#11</td>
+                              <td>Ngọc Hoàn</td>
+                              <td class="adress">34 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">1</td>
+                              <td class="total-price">10.210.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#12</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#13</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#14</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#15</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#16</td>
+                              <td>Ngọc Hoan Ne</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="order-page" id="order-page3">
+                        <table class="table-pou col-lg-12">
+                          <thead>
+                            <tr>
+                              <th class="col-1">ID</th>
+                              <th class="col-3">Khách Hàng</th>
+                              <th class="col-3">Địa chỉ</th>
+                              <th class="col-2">Số lượng SP</th>
+                              <th class="col-2">Tổng Tiền</th>
+                              <th class="col-1">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="id">#17</td>
+                              <td>Kiều Vân</td>
+                              <td class="adress">49/3 Bùi Xuân Phái, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">5</td>
+                              <td class="total-price">25.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#18</td>
+                              <td>Vân</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#19</td>
+                              <td>Ngọc Hoàn</td>
+                              <td class="adress">34 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">1</td>
+                              <td class="total-price">10.210.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#20</td>
+                              <td>Kiều Vân</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#21</td>
+                              <td>Nguyễn Thanh Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#22</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#23</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#24</td>
+                              <td>Nguyễn Thanh Ly Ly</td>
+                              <td class="adress">101 Lê Trọng Tấn, Tây Thạnh, TP.HCM</td>
+                              <td class="quanity-prduct">3</td>
+                              <td class="total-price">65.600.000đ</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="order-nums-page">
+                        <button class="order-previousPage"><i class="fas fa-chevron-left"></i></button>
+                        <button class="order-num-page active" page-data="1">1</button>
+                        <button class="order-num-page" page-data="2">2</button>
+                        <button class="order-num-page" page-data="3">3</button>
+                        <button class="order-nextPage"><i class="fas fa-chevron-right"></i></button>
+                     </div>
+                    </div>
+                  </div>
+
+                  <div class="detail-user item-detail">
+                    <div class="my-heading">
+                      <h1>USER</h1>
+                    </div>
+                    <div class="user-content">
+                      <form action="" class="search-detail">
+                        <input type="text" name="search_" placeholder="Search everything...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                      <div class="user-page" id="user-page1" style="display:block;">
+                        <table class="table-pou col-lg-12">
+                          <thead>
+                            <tr>
+                              <th class="col-1">ID</th>
+                              <th style="text-align: left" class="col-4">Tên Tài Khoản</th>
+                              <th style="text-align: left" class="col-3">Email</th>
+                              <th class="col-2">Loại Tài Khoản</th>
+                              <th class="col-2">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="id">#1</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh Hoàng Hải Long Admin</span>
+                              </td>
+                              <td class="email-user">longlylyadmin@gmail.com</td>
+                              <td class="type-account">Admin</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#2</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh Hoàng Hải Long</span>
+                              </td>
+                              <td class="email-user">longlyly@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#3</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Ly Ly</span>
+                              </td>
+                              <td class="email-user">lyly@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#4</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh Hoàng</span>
+                              </td>
+                              <td class="email-user">longlylyluy@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#5</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">HUY HUY</span>
+                              </td>
+                              <td class="email-user">Huy1@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#6</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Qanh</span>
+                              </td>
+                              <td class="email-user">QA@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#7</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Kieu Van</span>
+                              </td>
+                              <td class="email-user">van@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#8</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Tuyen</span>
+                              </td>
+                              <td class="email-user">Tuyen@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="user-page" id="user-page2">
+                        <table class="table-pou col-lg-12">
+                          <thead>
+                            <tr>
+                              <th class="col-1">ID</th>
+                              <th style="text-align: left" class="col-4">Tên Tài Khoản</th>
+                              <th style="text-align: left" class="col-3">Email</th>
+                              <th class="col-2">Loại Tài Khoản</th>
+                              <th class="col-2">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="id">#9</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Leo Hoaag</span>
+                              </td>
+                              <td class="email-user">LeoHoag@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#10</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Ngoc Hoan</span>
+                              </td>
+                              <td class="email-user">Hoan1@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#11</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Hoaan Ne</span>
+                              </td>
+                              <td class="email-user">Hoan@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#12</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Mthu</span>
+                              </td>
+                              <td class="email-user">Mthu@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#13</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Thư</span>
+                              </td>
+                              <td class="email-user">Thư@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#14</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh</span>
+                              </td>
+                              <td class="email-user">huynh@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#15</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Tín</span>
+                              </td>
+                              <td class="email-user">tin@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#16</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh Hoàng Hải Long 4</span>
+                              </td>
+                              <td class="email-user">longlyly4@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="user-page" id="user-page3">
+                        <table class="table-pou col-lg-12">
+                          <thead>
+                            <tr>
+                              <th class="col-1">ID</th>
+                              <th style="text-align: left" class="col-4">Tên Tài Khoản</th>
+                              <th style="text-align: left" class="col-3">Email</th>
+                              <th class="col-2">Loại Tài Khoản</th>
+                              <th class="col-2">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="id">#17</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh Hoàng Hải Long 3</span>
+                              </td>
+                              <td class="email-user">longlyly3@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#18</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Nguyễn Thanh Ly Ly</span>
+                              </td>
+                              <td class="email-user">longlyly2@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#19</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Long Ly</span>
+                              </td>
+                              <td class="email-user">longlyly10@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="id">#20</td>
+                              <td class="info-user">
+                                <img src="./img/admin/noavatar.png" alt="" class="avt">
+                                <span class="name-user">Huỳnh Hoàng Long</span>
+                              </td>
+                              <td class="email-user">long@gmail.com</td>
+                              <td class="type-account">User</td>
+                              <td class="actions">
+                                <a href="">Details</a>
+                                <i class="delete fas fa-ban"></i>
+                              </td>
+                            </tr>
+
+
+                  
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="user-nums-page">
+                        <button class="user-previousPage"><i class="fas fa-chevron-left"></i></button>
+                        <button class="user-num-page active" page-data="1">1</button>
+                        <button class="user-num-page" page-data="2">2</button>
+                        <button class="user-num-page" page-data="3">3</button>
+                        <button class="user-nextPage"><i class="fas fa-chevron-right"></i></button>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container grid grid--5-cols">
+          <div class="logo-col">
+              <p class="footer-heading">Follow Us</p>
+              <ul class="social-link">
+                  <li class="social">
+                      <a href="#">
+                          <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                      </a>
+                      <p>Facebook</p>
+                  </li>
+                  <li class="social">
+                      <a href="">
+                          <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                      </a>
+                      <p>Instagram</p>
+                  </li>
+                  <li class="social">
+                      <a href="">
+                          <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                      </a>
+                      <p>Linkedin</p>
+                  </li>
+              </ul>
+          </div>
+          <div class="address-col">
+              <p class="footer-heading">Contacts</p>
+              <address class="contact">
+                      <p>
+                          1234 Phạm Văn Bạch, Phường 12, Gò Vấp, TP.HCM<br><br>
+                          <a class="contact-num" href="tel:012-345-6789">012-345-6789</a><br>
+                          <a class="contact-mail" href="mailto:Longlyly@gmail.com">Longlyly@gmail.com</a>
+                      </p>
+              </address>
+          </div>
+          <div class="nav-col">
+              <p class="footer-heading">Account</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a class="fl" href="#">Create Account</a></li>
+                  <li class="footer-link"><a href="#">Sign in</a></li>
+                  <li class="footer-link"><a href="#">IOS App</a></li>
+                  <li class="footer-link"><a href="#">Androind App</a></li>
+                  <li class="footer-link"><a href="#">Twitter</a></li>
+              </ul>
+          </div>
+          <div class="nav-col">
+              <p class="footer-heading">Store</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a href="#">About Us</a></li>
+                  <li class="footer-link"><a href="#">HLL Policies</a></li>
+                  <li class="footer-link"><a href="#">HLL Careers</a></li>
+                  <li class="footer-link"><a href="#">Media Contacts</a></li>
+                  <li class="footer-link"><a href="#">Flash Deals</a></li>
+              </ul>
+          </div>
+          <div class="nav-col">
+              <p class="footer-heading">HLL Download</p>
+              <table class="footer-app">
+                  <tr>
+                      <th> <div class="footer-qr">
+                              <img src="./img/qr/qr-code.png" alt="Mã Qr" class="qr-code">
+                          </div>
+                      </th>
+                      <th>
+                          <div>
+                              <a href="#" class="footer-qr-link">
+                                  <img src="./img/qr/app-store.png" alt="App Store" class="footer-app-mac">
+                              </a>
+                          </div>
+                          <div>
+                              <a href="#" class="footer-qr-link">
+                                  <img src="./img/qr/google-play.png" alt="Google Play" class="footer-app-android">
+                              </a>
+                          </div>
+                      </th>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </footer>
+
+    <br><br><br>
+
+</body>
+<script>
+  // Dummy data for demonstration
+  const salesData = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+      datasets: [{
+          label: 'Doanh số',
+          data: [1000, 1500, 1200, 2000, 1800, 2500],
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255, 99, 132, 1)',
+          borderWidth: 1
+      }]
+  };
+
+  const visitorsData = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+      datasets: [{
+          label: 'Lượng truy cập',
+          data: [500, 800, 700, 900, 1000, 1200],
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+      }]
+  };
+
+  // Render sales chart
+  const salesCtx = document.getElementById('salesChart').getContext('2d');
+  const salesChart = new Chart(salesCtx, {
+      type: 'line',
+      data: salesData,
+      options: {}
+  });
+
+  // Render visitors chart
+  const visitorsCtx = document.getElementById('visitorsChart').getContext('2d');
+  const visitorsChart = new Chart(visitorsCtx, {
+      type: 'bar',
+      data: visitorsData,
+      options: {}
+  });
+</script>
+
+
+<script>
+
+    
+  document.addEventListener("DOMContentLoaded", function() {
+      updateHeader();
+  });
+  function updateHeader() {
+      const loggedIn = localStorage.getItem("loggedIn");
+      const email = localStorage.getItem("email");
+
+      if (loggedIn === "true" && email) {
+          const loginLinks = document.querySelectorAll(".main-nav .main-nav-link.nav-cta[href='./dangnhap.html']");
+          loginLinks.forEach(link => {
+              link.innerHTML = `<span style="margin-right: 0px; font-size: 15px; font-weight: 500;">${email}</span>`;
+              link.href = "#";
+          });
+
+          const logoutLink = document.createElement("li");
+          logoutLink.innerHTML = `<a class="main-nav-link nav-cta" href="#" onclick="logout()">Đăng xuất</a>`;
+          document.querySelector(".main-nav-list").appendChild(logoutLink);
+      }
+  }
+  function logout() {
+      localStorage.removeItem("loggedIn");
+      localStorage.removeItem("email");
+      localStorage.removeItem("password");
+      window.location.href = "./dangnhap.html";
+  }
+
+
+</script>
+
+
+<script src="./mainadmin.js"></script>
+</html>

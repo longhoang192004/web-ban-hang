@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="./img/banner/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="./style1.css">
+   <link rel="stylesheet" type="text/css" href="./reponsive.css">
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <title>Liên hệ</title>
+    <!---------------------------------------------------RESPONSIVE--------------------------------------------------->
+    <style>
+        @media only screen and (max-width: 63.9375em) {
+            body{
+                align-items: center;
+                width: 100%;
+                background-color: rgb(245, 208, 203);
+              }
+              .header {
+                background-color: rgb(245, 208, 203);
+                flex-direction: column;
+                align-items: center;
+                height: 220px;
+                width: 100%;
+                padding: 0rem;
+            }
+            .footer {
+                font-size: 2rem;
+                background-color: rgb(245, 208, 203);
+                margin-bottom: 1rem;
+              }
+            .contact-info {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                width: fit-content;
+                margin-top: 30px;
+              }
+              
+              .contact-item {
+                text-align:justify;
+                transition: transform 0.4s ease-in-out;
+                flex: 1 1 100%;
+                margin-bottom: 10px;
+              }
+              
+              .contact-item:hover {
+                transform: translateY(-5px);
+              }
+              
+              .contact-icon {
+                font-size: 20px;
+                color: #333;
+              }
+              
+              .contact-text {
+                text-align: justify;
+                font-size: 12px;
+                color: #555;
+              }
+              
+              .contact-text1 {
+                margin-top: 100px;
+                text-align: justify;
+                font-size: 12px;
+                color: #555;
+              }
+              
+              .contact-text a {
+                color: #9fcc23;
+                text-decoration: none;
+              }
+              
+              .contact-text a:hover {
+                text-decoration: underline;
+                line-height: -0.5rem;
+              }
+              
+              .contact-section{
+                  float: left;
+                  margin-left: 2%;
+                  width: 85%;
+              }
+              
+              
+              
+
+              .contact-section1{
+                clear: both;
+                width: 92%;
+                flex-direction: column;
+                height: max-content;
+              }
+              .section-cta1{
+                width: 70%;
+                align-items: center;
+                margin-right: 100%;
+              }
+              .contact-heading{
+                position: absolute;
+                margin-top: 1px;
+                gap: 10px;
+              }
+              .contact-section3{
+                padding-top: 40px;
+                clear: both;
+              }
+              .map-section iframe {
+                height: 350px;
+                width: 350px;
+              }
+              .gach
+              {
+                display: none;
+                font-size: small;
+              }
+              
+
+              
+
+              .cta-text-box1{
+                color: #45260a;
+                padding-top: 10px;
+                padding-left: 100%;
+                width: 10%;
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 2rem;
+                letter-spacing: -0.5px;
+              }
+              .cta-form1{
+                display: grid;
+                flex-direction: row;
+                padding-top: 10px;
+                row-gap: 1.2rem;
+              }
+              .cta-form1 label{
+                display: block;
+                font-size: 1.5rem;
+                flex-direction: column;
+                font-weight: 500;
+                margin-bottom: 1.2rem;
+              }
+              .cta-form1 input,
+              .cta-form1 select{
+                width: 100%;
+                padding: 1.2rem;
+                font-size: 1.2rem;
+                font-family: inherit;
+                border: none;
+                color: inherit;
+                background-color: #fdf2e9;
+                border-radius: 9px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+              }
+              .cta-form1 input::placeholder{
+                color: #aaa;
+              }
+              .btn--form1{
+                background-color: #45260a;
+                color: #fdf2e9;
+                align-self: flex-end;
+              }
+              .btnformtrogiup{
+                text-align: center;
+                background-color: #b3b030;
+                color: #fff;
+                font-size: x-large;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                align-items: center;
+                width: 100%;
+              }
+              .btnformtrogiup:hover{
+                width: 100%;
+                border-radius: 30px;
+                border: none;
+                background-color: #188a7b;
+              }
+              .heading-secondary-2{
+                font-size: 2.4rem;
+                line-height: 1.2;
+                font-family: 'Kanit', sans-serif;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 1rem;
+                letter-spacing: -0.5px;
+              }
+
+              .header {
+                flex-direction: column;
+                align-items: center;
+                height: 200px;
+                width: 100%;
+                padding: 0rem;
+            }
+            .header img {
+              height: 20rem;
+              width: 25rem;
+            }
+            .main-nav-list {
+                display: none;
+                z-index: 2;
+                  flex-direction: row;
+                  padding-right: 0;
+                  align-items: center;
+                  gap: 2px;
+                  width: 95%;
+              }
+              #menu-icon {
+                position: fixed;
+                top: 0;
+                right: 0;
+                display: block;
+               }
+
+               #sidebar.sidebar{
+                  height: 28rem;
+               }
+            
+               .sidebar.active{
+                  height: 28rem;
+               }
+               .sidebar{
+                padding-top: 10px;
+                height: 40%;
+               }
+          
+               .sidebar-link{
+                font-size: 1.5rem;
+               }
+            }
+    </style>
+    <script src="./menuphu.js"></script>
+
+
+   
+</head>
+<body>
+    <!-- -------------------------------Header---------------------------- -->
+
+    <header class="header">
+      <a href="./main.html" class="logo header-logo"><img class="logo header-logo"
+          src="./img/header/HLL_STORE-removebg-preview.png"
+         ></a>
+         <a class="youraccount" href="./taikhoan.html"><img src="./img/admin/noavatar.png" alt="" class="youraccount"></a>
+      <nav class="main-nav">
+          <ul class="main-nav-list">
+              <li><a class="main-nav-link nav-cta" href="./dangnhap.html">Đăng nhập</a></li>
+              
+          </ul>
+          <div id="menu-icon">&#9776;</div>
+      </nav>
+  </header>
+  <div id="sidebar" class="sidebar">
+    <ul class="sidebar-list">
+        <li><a class="sidebar-link" href="./aboutus.html">About us</a></li>
+        <li><a class="sidebar-link" href="./lienhe.html">Liên hệ</a></li>
+        <li><a class="sidebar-link" href="./dangky.html">Đăng kí</a></li>
+        <li><a class="sidebar-link" href="./dangnhap.html">Đăng nhập</a></li>
+        <li><a class="sidebar-link" href="./taikhoan.html">Your account</a></li>
+    </ul>
+  </div>
+
+
+  <!-- -------------------------------END Header---------------------------- -->
+
+<div style="background-color: rgb(245, 208, 203);">
+    <section class="contact-section1"  style="background-color: rgb(245, 208, 203);">
+        <div class="container">
+            <h1 class="contact-heading" style="font-size: 25px; font-weight: 900;"><br>Thông tin liên hệ</h1><br><br><br>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <ion-icon class="contact-icon" name="logo-facebook"></ion-icon>
+                    <span class="contact-text">Facebook: <a href="#" style="color: #45260a;">facebook.com/hllphonestore<br></a></span>
+                </div>
+                <div class="contact-item">
+                    <ion-icon class="contact-icon" name="logo-instagram"></ion-icon>
+                    <span class="contact-text">Instagram: <a href="#" style="color: #45260a;">@hllphonestore<br></a></span>
+                </div>
+                <div class="contact-item">
+                    <ion-icon class="contact-icon" name="logo-youtube"></ion-icon>
+                    <span class="contact-text">YouTube: <a href="#" style="color: #45260a;">youtube.com/hllphonestore<br></a></span>
+                </div>
+                <div class="contact-item">
+                    <ion-icon class="contact-icon" name="call"></ion-icon>
+                    <span class="contact-text">Số điện thoại: <a href="tel:012-345-6789" style="color: #45260a;">012-345-6789<br></a></span>
+                </div>
+                <div class="contact-item">
+                    <ion-icon class="contact-icon" name="mail"></ion-icon>
+                    <span class="contact-text">Email: <a href="mailto:longlyly@gmail.com" style="color: #45260a;">longlyly@gmail.com<br></a></span>
+                </div>
+
+
+                <div class="contact-item">
+                    <ion-icon class="contact-icon" name="location"></ion-icon>
+                    <span class="contact-text1">Cơ sở 1: 191 Lê Lai, Phường 12, Gò Vấp, TP.HCM<br></span>
+                </div>
+                <div class="contact-item">
+                  <ion-icon class="contact-icon" name="location"></ion-icon>
+                  <span class="contact-text1">Cơ sở 2: 28 Bạch Đằng, Linh Trung, Thủ Đức, TP.HCM<br></span>
+                </div>
+                <div class="contact-item">
+                  <ion-icon class="contact-icon" name="location"></ion-icon>
+                  <span class="contact-text1">Cơ sở 3: 19/3 Trường Chính, Hải Hòa, Hai Bà Trưng, Hà Nội<br></span>
+                </div>
+			</div>
+		</div>
+    </section>
+                
+				
+	<section class="section-cta1"  style="background-color: rgb(245, 208, 203);">
+            	<div class="container-new cta1">
+                <div class="cta-text-box1" style="width: 700px; height: max-content; background-color: rgb(245, 208, 203);">
+                    <h2 class="heading-secondary-2">
+                        Hãy để lại thông tin nếu bạn cần hỗ trợ !
+                    </h2>
+
+                    <p class="cta-text" style="text-align: center;">Cam kết luôn bán điện thoại với giá rẻ và chất lượng. Chúng tôi luôn hỗ trợ 24/7 bất cứ khi nào bạn thắc mắc thì hãy liên hệ 
+                        cho chúng tôi.
+                    </p>
+                    <form class="cta-form1" action="#" id="trogiupForm">
+                        <div>
+                            <label for="full-name">Họ và tên</label>
+                            <input type="text"
+                                id="full-name"
+                                placeholder="LongLyLy"
+                                required>
+                        </div>
+						
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email"
+                                id="email" 
+                                placeholder="ngocchoanne@gmail.com" 
+                                required>
+                        </div>
+						
+                        <div>
+                            <label for="select-phone">Hãng điện thoại muốn mua?</label>
+                            <select id="select-phone" required>
+                                
+                                <option value="samsung">SamSung</option>
+                                <option value="iphone">Iphone</option>
+                                <option value="huawei">Huawei</option>
+                                <option value="oppo">Oppo</option>
+                                <option value="vivo">Vivo</option>
+                                <option value="xiaomi">Xiaomi</option>
+                            </select>
+                        </div>
+						
+                        <div>
+                           <label for="hoi">Bạn cần trợ giúp gì?</label>
+                           <input type="hoi"
+                               id="hoi" 
+                               placeholder="..." 
+                               required>
+                        </div>
+						
+                        <div>
+                           <label for="hoi">Góp ý</label>
+                           <input type="hoi"
+                               id="hoi" 
+                               placeholder="..." 
+                               required>
+                        </div>
+						
+                        <button class="btnformtrogiup" type="submit">Gửi</button>
+
+					
+						
+                        <script>
+                            document.getElementById("trogiupForm").addEventListener("submit", function(event) {
+                                event.preventDefault(); 
+                                
+                                var password = document.getElementById("full-name").value;
+                                var email = document.getElementById("email").value;
+                                var email = document.getElementById("select-phone").value;
+                                var email = document.getElementById("hoi").value;
+                                var password = document.getElementById("hoi").value;
+                                alert("Đã gửi thành công!");
+                                
+                                
+                                window.location.href = "main.html";
+                            });
+                        </script>
+                  		</form>
+				 </div>
+           	  </div>
+	</section>
+        
+	<div class="contact-section3">
+	<section>
+		<div class="mapcontent">
+		<center>
+		<span class="gach">_________________________________________________________________________________________________________________________________________________<br></span><br>
+		<p style="font-size: 20px; font-weight: 600;">ĐỊA ĐIỂM</p><br>
+		</center>
+		
+		</div>
+        <center>
+            	<section class="map-section mt-4">
+                    	<iframe
+                        width="1150px"
+                        height="400px"
+                        frameborder="0"
+                        style="border:0"
+                        src="./img/map.PNG" allowfullscreen>
+                    	</iframe>
+               	</section>
+        </center>
+	</section>
+    </div>
+</div>
+
+
+
+    <br>
+    <footer class="footer" style="clear: both;">
+      <div class="container grid grid--5-cols">
+          <div class="logo-col">
+              <p class="footer-heading">Follow Us</p>
+              <ul class="social-link">
+                  <li class="social">
+                      <a href="#">
+                          <ion-icon class="social-icon" name="logo-facebook">Facebook</ion-icon>
+                      </a>
+                      <p>Facebook</p>
+                  </li>
+                  <li class="social">
+                      <a href="">
+                          <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                      </a>
+                      <p>Instagram</p>
+                  </li>
+                  <li class="social">
+                      <a href="">
+                          <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                      </a>
+                      <p>Linkedin</p>
+                  </li>
+              </ul>
+          </div>
+		  
+          <div class="nav-col">
+              <p class="footer-heading">Contacts</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a class="fl" href="#">longlyly@gmail.com</a></li>
+                  <li class="footer-link"><a class="fl" href="#">HOT LINE: 0398811006</a></li>
+				  <li class="footer-link"><a href="#">.</a></li>
+                  <li class="footer-link"><a href="#">.</a></li>
+                  <li class="footer-link"><a href="#">.</a></li>
+              </ul>
+          </div>
+		  
+          <div class="nav-col">
+              <p class="footer-heading">Account</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a class="fl" href="#">Create Account</a></li>
+                  <li class="footer-link"><a href="#">Sign in</a></li>
+                  <li class="footer-link"><a href="#">IOS App</a></li>
+                  <li class="footer-link"><a href="#">Androind App</a></li>
+                  <li class="footer-link"><a href="#">Twitter</a></li>
+              </ul>
+          </div>
+		  
+          <div class="nav-col">
+              <p class="footer-heading">Store</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a href="#">About Us</a></li>
+                  <li class="footer-link"><a href="#">HLL Policies</a></li>
+                  <li class="footer-link"><a href="#">HLL Careers</a></li>
+                  <li class="footer-link"><a href="#">Media Contacts</a></li>
+                  <li class="footer-link"><a href="#">Flash Deals</a></li>
+              </ul>
+          </div>
+		  
+          <div class="nav-col">
+              <p class="footer-heading">HLL Download</p>
+              <table class="footer-app">
+                  <tr>
+                      <th> <div class="footer-qr">
+                              <img src="./img/qr/qr-code.png" alt="Mã Qr" class="qr-code">
+                          </div>
+                      </th>
+                      <th>
+                          <div>
+                              <a href="#" class="footer-qr-link">
+                                  <img src="./img/qr/app-store.png" alt="App Store" class="footer-app-mac">
+                              </a>
+                          </div>
+                          <div>
+                              <a href="#" class="footer-qr-link">
+                                  <img src="./img/qr/google-play.png" alt="Google Play" class="footer-app-android">
+                              </a>
+                          </div>
+                      </th>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </footer>
+  <br><br><br>
+		
+  <script>
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        updateHeader();
+    });
+    function updateHeader() {
+        const loggedIn = localStorage.getItem("loggedIn");
+        const email = localStorage.getItem("email");
+
+        if (loggedIn === "true" && email) {
+            const loginLinks = document.querySelectorAll(".main-nav .main-nav-link.nav-cta[href='./dangnhap.html']");
+            loginLinks.forEach(link => {
+                link.innerHTML = `<span style="margin-right: 0px; font-size: 15px; font-weight: 500;">${email}</span>`;
+                link.href = "#";
+            });
+
+            const logoutLink = document.createElement("li");
+            logoutLink.innerHTML = `<a class="main-nav-link nav-cta" href="#" onclick="logout()">Đăng xuất</a>`;
+            document.querySelector(".main-nav-list").appendChild(logoutLink);
+        }
+    }
+    function logout() {
+        localStorage.removeItem("loggedIn");
+        localStorage.removeItem("email");
+        localStorage.removeItem("password");
+        window.location.href = "./dangnhap.html";
+    }
+
+
+</script>
+
+
+</body>
+</html>

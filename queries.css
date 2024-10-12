@@ -1,0 +1,2706 @@
+@media (min-width: 1200px) and (max-width: 1400px){
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      grid-auto-columns: calc(( 100% / 3 ) - 1.5rem);
+   } 
+   .cart-fixed{
+      color: orangered;
+      position: fixed;
+      margin-top: 10%;
+      background-color: gray;
+      border-radius: 10%;
+      bottom: 8rem;
+      cursor: pointer;
+      right: 3.8rem;
+      z-index: 1000;
+      width: 8%;
+      height: 8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .youraccount img{
+   width: 3rem;
+   height: 3rem;
+   border-radius: 30px;
+   float: right;
+   vertical-align: top;
+   position: fixed;
+   top: 13rem;
+   right: 1rem;
+ }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 100rem;
+   }
+
+   .img-phone-fix {
+      content: url('img/banner_db/banner-do.png');
+      float: none;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .img-phone-fix-1{
+      content: url('img/banner_db/banner-vang.png');
+      float: none;
+   }
+
+   .section{
+      padding: 0 2rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   .grid-5{
+      column-gap: 1rem;
+   }
+
+   .knowledge{
+      padding: 0 2rem;
+   }
+
+}
+
+@media (min-width: 965px) and (max-width:1199px){
+   
+   /* Chỉnh header */
+
+   .youraccount{
+      display: none;
+  }
+   .header img{
+      margin-top: -8rem;
+      height: 20rem;
+      width: 26rem;
+   }
+   
+
+   .container-1{
+      padding: 0 2rem;
+   }
+
+   .container-1 .grid--4-cols .phone-box .phone .phone-content .fix-tag{
+      font-size: 1.3rem;
+   }
+
+   .section{
+      padding: 0 2rem;
+   }
+
+   .heading-primary{
+      font-size: 4rem;
+   }
+
+   .main-nav-list .main-nav-link{
+      font-size: 1rem;
+      font-weight: 600;
+         gap: 5px;
+   }
+
+   .deliveres-img img{
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.3rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .logos img{
+      height: 6.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .tag{
+      font-size: 1rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      grid-auto-columns: calc(( 100% / 3 ) - 1.5rem);
+   } 
+
+   .img-phone-fix {
+      content: url('img/banner_db/banner-do.png');
+      float: none;
+  }
+
+   .img-phone-fix-1{
+      content: url('img/banner_db/banner-vang.png');
+      float: none;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .phone-buy-phone{
+      margin-top: -3.4rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin: 0 8rem;
+      column-gap: 10rem;
+   }
+
+   .phone-buy-phone.fix{
+      margin-top: -5rem;
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.5rem;
+  }
+
+   .knowledge-blog-img img{
+      max-width: 30rem;
+      max-height: 30rem;
+      object-fit: cover;
+   }
+
+   .knowledge-blog{
+      max-width: 40rem;
+      max-height: 30rem;
+      background-color: #f1f3f5;
+      border-radius: 1rem;
+      padding-bottom: 4rem;
+   }
+
+   .knowledge{
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+
+   .grid-5{
+      column-gap: 1.4rem;
+   }
+
+   .impression{
+      padding: 0 2rem;
+   }
+
+   .comment-box-design{
+      height: 13rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .comment .container-3{
+      padding: 0;
+   }
+
+   .impresstion-text-title{
+      font-size: 3.8rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1.5rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 2rem;
+   }
+
+   .btn-impression{
+      font-size: 1.8rem;
+      margin-top: 3rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   .phone.phone-5 .phone-content p{
+      font-size: 1.5rem;
+   }
+
+   .phone.phone-5 .phone-attributes span{
+      font-size: 1.2rem;
+   }
+ 
+}
+
+@media (min-width: 875px) and (max-width:964px){
+   .youraccount{
+      display: none;
+  }
+   .header img {
+      height: 18rem;
+      width: 24rem;
+   }
+
+   .header img{
+      margin-top: -7.2rem;
+   }
+   
+
+   .main-nav-list .main-nav-link{
+      font-size: 1.4rem;
+      font-weight: 600;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta{
+      font-size:1.2rem ;
+   }
+
+   .heading-primary{
+      font-size: 3.5rem;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta:hover{
+      color: chocolate;
+   }
+
+   .hero-decription{
+      font-size: 1.4rem;
+   }
+
+   input.auto-text-box{
+      padding: 1rem 0rem;
+      padding-left: 20px;
+   }
+
+   .deliveres-img img{
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .logos img{
+      height: 5.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .container-1 .grid--4-cols{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4rem;
+   }
+
+   .tag{
+      font-size: 1.2rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .phone-content p{
+      font-size: 2rem;
+   }
+
+   .fix-tag{
+      font-size: 2.6rem;
+   }
+
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      padding-right: 3rem;
+      padding-right: 0;
+      grid-auto-columns: calc(( 100% / 3 ) - 2.5rem);
+   }
+
+   .carousel .phone{
+    margin-left: 4rem;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .img-phone-fix {
+      content: url('img/banner_db/banner-do.png');
+      max-width: 90rem;
+      max-height: 40rem;
+      object-fit: cover;
+      padding: 0 2rem;
+      float: none;
+  }
+   
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .carousel{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: transparent;
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-1 .grid .phone-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 86rem;
+   }
+
+   .phone.phone-fix{
+      height: 30rem;
+      width: 23rem;
+   }
+
+   .phone-buy-phone{
+      margin-top: -5.8rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 1.8rem;
+   }
+
+   .grid--3-cols-fix-3.c .carousel1 .phone .tag,
+   .grid--3-cols-fix-2.b .carousel .phone .tag{
+      font-size: 0.8rem;
+   }
+
+   .grid--3-cols-fix-3.c .carousel1 .phone .phone-title,
+   .grid--3-cols-fix-2.b .carousel .phone .phone-title{
+      font-size: 1.6rem;
+   }
+
+   .grid--3-cols-fix-3.c .carousel1 .phone .phone-content ul li span,
+   .grid--3-cols-fix-2.b .carousel .phone .phone-content ul li span{
+      font-size: 1.2rem;
+   }
+
+   .img-phone-fix-1 {
+      content: url('img/banner_db/banner-vang.png');
+      max-width: 90rem;
+      max-height: 40rem;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .impresstion-text-title{
+      font-size: 3rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 1.5rem;
+   }
+
+   .btn-impression{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+   }
+
+   .bonus-0 .filter-phone button{
+      padding: 0.7rem 1.5rem;
+      margin-left: 3rem;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.8rem;
+   }
+
+   .knowledge-active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid-4{
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: none;
+   }
+
+   .grid-5{
+      grid-template-columns: none;
+   }
+
+   .container-6.grid-4{
+      grid-template-columns: 1fr;
+   }
+
+   .knowledge-blog-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .blog-img{
+      padding-top: 2rem;
+   }
+
+   .comment-box-design{
+      height: 16rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .impression{
+      padding: 0 3rem;
+   }
+
+   .section{
+      padding: 0 2rem;
+   }
+
+   .comment .container-3{
+      padding: 0;
+   }
+
+   .comment{
+      padding: 0 2rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   .section .grid-2{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .section .grid-2 .slider{
+      grid-column: 1/3;
+   }
+
+   .section .grid-2 .section-right-bottom,
+   .section .grid-2 .section-right-top{
+      display: none;
+   }
+
+   .knowledge-blog-title p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .knowledge-blog-describe p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+}
+
+@media (min-width: 770px) and (max-width: 874px){
+   .youraccount{
+      display: none;
+  }
+   .header img{
+      margin-top: -5.2rem;
+   }
+   
+
+   .header img {
+      height: 14rem;
+      width: 20rem;
+   }
+
+   .main-nav-list .main-nav-link{
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+
+   .hero-decription{
+      font-size: 1.4rem;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta{
+      font-size:1rem ;
+   }
+
+   .heading-primary{
+      font-size: 3.5rem;
+   }
+
+   .deliveres-img img{
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .logos img{
+      height: 5.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .container-1 .grid--4-cols{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4rem;
+   }
+
+   .container-1 .grid .phone-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .tag{
+      font-size: 1.2rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .phone-content p{
+      font-size: 2rem;
+   }
+
+   .fix-tag{
+      font-size: 2.6rem;
+   }
+
+   .carousel .phone-buy-phone{
+      margin-top: -3.58rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .carousel1 .phone-buy-phone{
+      margin-top: -3.64rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 1.8rem;
+   }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 72rem;
+   }
+
+   .img-phone-fix {
+      content: url('img/banner_db/banner-do.png');
+      max-width: 70rem;
+      max-height: 30rem;
+      object-fit: cover;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .img-phone-fix-1 {
+      content: url('img/banner_db/banner-vang.png');
+      max-width: 70rem;
+      max-height: 30rem;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .carousel{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: transparent;
+   }
+
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      padding-right: 3rem;
+      grid-auto-columns: calc(( 100% / 2 ));
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .section{
+      padding: 0 2rem;
+   }
+
+   .grid-3{
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+   }
+
+   .impression-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .impresstion-text-title{
+      font-size: 3.5rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 1.5rem;
+   }
+
+   .btn-impression{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2rem;
+   }
+
+   .bonus-0 .filter-phone button{
+      padding: 0.7rem 1.5rem;
+      margin-left: 2.5rem;
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.2rem;
+   }
+
+   .knowledge-active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid-4{
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: none;
+   }
+
+   .grid-5{
+      grid-template-columns: none;
+   }
+
+   .container-6.grid-4{
+      grid-template-columns: 1fr;
+   }
+
+   .knowledge-blog-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .blog-img{
+      padding-top: 2rem;
+   }
+
+   .comment-box-design{
+      height: 13rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .comment .container-3{
+      padding: 0;
+   }
+
+   .comment-box-design h3{
+      font-size: 1.5rem;
+   }
+
+   .comment-box-design p{
+      font-size: 1rem;
+   }
+
+   .heading-secondary-2{
+      font-size: 2.8rem;
+   }
+
+   .cta-text{
+      font-size: 1.6rem;
+   }
+
+   .cta-form input,
+   .cta-form select{
+      padding: 0.8rem;
+      font-size: 1.5rem;
+   }
+
+   .cta-text-box .btn--form{
+      padding: 0.8rem;
+      font-size: 1.5rem;
+   }
+
+   .footer .grid--4-cols{
+      display: flex;
+      align-items: stretch;
+   }
+
+   .footer-heading{
+      font-size: 1.6rem;
+   }
+
+   .nav-col ul li a,
+   .address-col ul li,
+   .logo-col ul li{
+      font-size: 1.2rem;
+   }
+
+   .copyright-r{
+      font-size: 1rem;
+   }
+
+   .copyright-region-list{
+      font-size: 1rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   .section .grid-2{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .section .grid-2 .slider{
+      grid-column: 1/3;
+   }
+
+   .section .grid-2 .section-right-bottom,
+   .section .grid-2 .section-right-top{
+      display: none;
+   }
+
+   .knowledge-blog-title p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .knowledge-blog-describe p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   /* Fix */
+   .phone-box .phone-buy-phone{
+      margin-top: -6rem;
+   }
+      
+}
+
+@media (min-width: 670px) and (max-width:769px){
+   .youraccount{
+      display: none;
+  }
+   .header img{
+      margin-top: -9rem;
+   }
+   
+
+   .main-nav-list {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   .phone-box .phone-buy-phone{
+      margin-top: -6rem;
+   }
+
+   .phone-box .phone-buy-phone.click-here
+
+   .main-nav-list li {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #555;
+   }
+
+   .main-nav-list li:last-child {
+      border-bottom: none;
+   }
+
+   #menu-icon {
+      position: fixed;
+      z-index: 3000;
+      right: 3%;
+      top: 1%;
+      display: block;
+   }
+
+   .hero{
+      grid-template-columns: 1fr;
+   }
+
+   .hero-img-box{
+      display: flex;
+      justify-content: center;
+   }
+
+   .hero-img-box img{
+      margin-top: -8rem;
+      max-width: 30rem;
+      max-height: 30rem;
+   } 
+
+   .header img {
+      height: 20rem;
+      width: 26rem;
+   }
+   .main-nav-list{
+      display: none;
+      z-index: 2;
+      flex-direction: row;
+      padding-right: 0;
+      align-items: center;
+      gap: 2px;
+      width: 95%;
+   }
+   
+
+   .main-nav-list .main-nav-link{
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+
+   .hero-decription{
+      font-size: 1.4rem;
+      text-align: center;
+   }
+
+   .auto-text{
+      margin: 0 auto;
+   }
+
+   .delivered-phones{
+      display: flex;
+      justify-content: center;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta{
+      font-size:1.5rem ;
+   }
+
+   .heading-primary{
+      font-size: 3.5rem;
+      text-align: center;
+   }
+
+   .deliveres-img img{
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .logos img{
+      height: 5.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .container-1 .grid--4-cols{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4rem;
+   }
+
+   .container-1 .grid .phone-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .tag{
+      font-size: 1.2rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .phone-content p{
+      font-size: 2rem;
+   }
+
+   .fix-tag{
+      font-size: 2.6rem;
+   }
+
+   .carousel .phone-buy-phone{
+      margin-top: -3.65rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .carousel1 .phone-buy-phone{
+      margin-top: -3.64rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 1.8rem;
+   }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 66rem;
+   }
+
+   .img-phone-fix {
+      content: url('img/banner_db/banner-do.png');
+      max-width: 60rem;
+      max-height: 20rem;
+      object-fit: cover;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .img-phone-fix-1 {
+      content: url('img/banner_db/banner-vang.png');
+      max-width: 60rem;
+      max-height: 20rem;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .carousel{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: transparent;
+   }
+
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      padding-right: 3rem;
+      grid-auto-columns: calc(( 100% / 2 ));
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .carousel .phone-buy-phone{
+      margin-top: -3.6rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .section{
+      padding: 0 2rem;
+   }
+
+   .section .grid-2{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .section .grid-2 .slider{
+      grid-column: 1/3;
+   }
+
+   .section .grid-2 .section-right-bottom,
+   .section .grid-2 .section-right-top{
+      display: none;
+   }
+
+   .grid-3{
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+   }
+
+   .impression-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .impresstion-text-title{
+      font-size: 3.5rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 1.5rem;
+   }
+
+   .btn-impression{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+   }
+
+   .bonus-0 .filter-phone button{
+      padding: 0.7rem 1.2rem;
+      margin-left: 2rem;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10rem;
+      justify-items: center;
+   }
+
+   .phone.phone-5{
+      max-width: 25rem;
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.2rem;
+   }
+
+   .knowledge-active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid-4{
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: none;
+   }
+
+   .grid-5{
+      grid-template-columns: none;
+   }
+
+   .container-6.grid-4{
+      grid-template-columns: 1fr;
+   }
+
+   .knowledge-blog-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .blog-img{
+      padding-top: 2rem;
+   }
+
+   .comment-box-design{
+      height: 11rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .comment .container-3{
+      padding: 0;
+   }
+
+   .comment-box-design h3{
+      font-size: 1.3rem;
+   }
+
+   .comment-box-design p{
+      font-size: 0.8rem;
+   }
+
+   .heading-secondary-2{
+      font-size: 2.5rem;
+   }
+
+   .cta-text{
+      font-size: 1.4rem;
+   }
+
+   .cta-form input,
+   .cta-form select{
+      padding: 0.8rem;
+      font-size: 1.3rem;
+   }
+
+   .cta-text-box .btn--form{
+      padding: 0.8rem;
+      font-size: 1.5rem;
+   }
+
+   .footer .grid--4-cols{
+      display: flex;
+      align-items: stretch;
+   }
+
+   .footer-heading{
+      font-size: 1.4rem;
+      font-weight: 700;
+   }
+
+   .nav-col ul li a,
+   .address-col ul li,
+   .logo-col ul li{
+      font-size: 1rem;
+   }
+
+   .copyright-r{
+      font-size: 0.8rem;
+   }
+
+   .copyright-region-list{
+      font-size: 0.8rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   #sidebar.sidebar{
+      
+      height: 20rem;
+   }
+
+   .sidebar.active{
+      z-index: 3000;
+      height: 16rem;
+   }
+
+   .knowledge-blog-title p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .knowledge-blog-describe p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+}
+
+@media (min-width: 550px) and (max-width:669px){
+   #sidebar.sidebar{
+      z-index: 3000;
+      height: 16rem;
+   }
+   .youraccount{
+      display: none;
+  }
+   .hero{
+      grid-template-columns: 1fr;
+   }
+
+   .hero-img-box{
+      display: flex;
+      justify-content: center;
+   }
+
+   .hero-img-box img{
+      margin-top: -8rem;
+      max-width: 30rem;
+      max-height: 30rem;
+   } 
+
+   .header img {
+      height: 20rem;
+      width: 26rem;
+   }
+
+   .main-nav-list .main-nav-link{
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+
+   .hero-decription{
+      font-size: 1.4rem;
+      text-align: center;
+   }
+
+   .auto-text{
+      margin: 0 auto;
+   }
+
+   .delivered-phones{
+      display: flex;
+      justify-content: center;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta{
+      font-size:1.5rem ;
+   }
+
+   .heading-primary{
+      font-size: 3.5rem;
+      text-align: center;
+   }
+
+   .deliveres-img img{
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .logos img{
+      height: 5.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .container-1 .grid--4-cols{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4rem;
+   }
+
+   .container-1 .grid .phone-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .tag{
+      font-size: 1.2rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .phone-content p{
+      font-size: 2rem;
+   }
+
+   .fix-tag{
+      font-size: 2.6rem;
+   }
+
+   .carousel1 .phone .phone-buy-phone,
+   .carousel .phone .phone-buy-phone{
+      margin-top: -3.1rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .carousel1 .phone-buy-phone{
+      margin-top: -3.64rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 1.8rem;
+   }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 58rem;
+   }
+
+   .img-phone-fix {
+      content: url('img/banner_db/banner-do.png');
+      max-width: 60rem;
+      max-height: 20rem;
+      object-fit: cover;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .img-phone-fix-1 {
+      content: url('img/banner_db/banner-vang.png');
+      max-width: 60rem;
+      max-height: 20rem;
+      padding: 0 2rem;
+      float: none;
+   }
+
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .carousel{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: transparent;
+      /* gap: 1rem; */
+   }
+
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-auto-columns: calc(( 100% / 2 ));
+   }
+
+   .phone.phone-fix .phone-content .phone-title{
+      font-size: 1.5rem;
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .carousel .phone-buy-phone{
+      margin-top: -3.6rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .section{
+      padding: 0 2rem;
+   }
+
+   .section .grid-2{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .section .grid-2 .slider{
+      grid-column: 1/3;
+   }
+
+   .section .grid-2 .section-right-bottom,
+   .section .grid-2 .section-right-top{
+      display: none;
+   }
+
+   .grid-3{
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+   }
+
+   .impression-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .impresstion-text-title{
+      font-size: 3.5rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 1.5rem;
+   }
+
+   .btn-impression{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+   }
+
+   .bonus-0 .filter-phone button{
+      padding: 0.5rem 0.8rem;
+      margin-left: 1.5rem;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10rem;
+   }
+
+   .phone.phone-5{
+      max-width: 25rem;
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.2rem;
+   }
+
+   .knowledge-active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid-4{
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: none;
+   }
+
+   .grid-5{
+      grid-template-columns: none;
+   }
+
+   .container-6.grid-4{
+      grid-template-columns: 1fr;
+   }
+
+   .knowledge-blog-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .knowledge{
+      padding: 0 2rem;
+   }
+
+   .blog-img{
+      padding-top: 2rem;
+   }
+
+   .comment-box-design{
+      height: 11rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .comment .container-3{
+      padding:  0 0rem;   
+   }
+
+   .comment-box-design h3{
+      font-size: 1rem;
+   }
+
+   .comment-box-design p{
+      font-size: 0.7rem;
+   }
+
+   .heading-secondary-2{
+      font-size: 2.5rem;
+   }
+
+   .cta-text{
+      font-size: 1.4rem;
+   }
+
+   .cta-form input,
+   .cta-form select{
+      padding: 0.8rem;
+      font-size: 1.3rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   .cta-text-box .btn--form{
+      padding: 0.8rem;
+      font-size: 1.5rem;
+   }
+
+   .footer .grid--4-cols{
+      display: flex;
+      align-items: stretch;
+   }
+
+   .footer-heading{
+      font-size: 1.4rem;
+      font-weight: 700;
+   }
+
+   .nav-col ul li a,
+   .address-col ul li,
+   .logo-col ul li{
+      font-size: 1rem;
+   }
+
+   .container hr,
+   .container .copyright{
+      display: none;
+   }
+
+   .main-nav-list {
+      display: none;
+   }
+
+   #menu-icon {
+      z-index: 3000;
+      position: fixed;
+      right: 3%;
+      top: 1%;
+      display: block;
+   }
+
+   .knowledge-blog-title p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .knowledge-blog-describe p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+}
+
+@media (min-width:440px) and (max-width: 550px) {
+   .youraccount{
+      display: none;
+  }
+   .header img{
+      margin-top: -6.5rem;
+   }
+
+   
+
+   .main-nav-list {
+      display: none;
+   }
+
+   #menu-icon {
+      position: fixed;
+      z-index: 3000;
+      right: 3%;
+      top: 1%;
+      display: block;
+   }
+
+   .hero{
+      grid-template-columns: 1fr;
+   }
+
+   .hero-img-box{
+      display: flex;
+      justify-content: center;
+   }
+
+   .hero-img-box img{
+      margin-top: -8rem;
+      max-width: 30rem;
+      max-height: 30rem;
+   } 
+
+   .header img {
+      height: 16rem;
+      width: 18rem;
+   }
+
+   .main-nav-list .main-nav-link{
+      font-size: 1rem;
+      font-weight: 600;
+   }
+
+   .hero-decription{
+      font-size: 1.4rem;
+      text-align: center;
+   }
+
+   .auto-text{
+      margin: 0 auto;
+   }
+
+   .delivered-phones{
+      display: flex;
+      justify-content: center;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta{
+      font-size:1.5rem ;
+   }
+
+   .heading-primary{
+      font-size: 3.5rem;
+      text-align: center;
+   }
+
+   .deliveres-img img{
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .logos img{
+      height: 5.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .container-1 .grid--4-cols{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1.5rem;
+      row-gap: 2.5rem;
+   }
+
+   .container-1 .grid .phone-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .tag{
+      font-size: 1.2rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .phone-content p{
+      font-size: 2rem;
+   }
+
+   .fix-tag{
+      font-size: 2.6rem;
+   }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 32rem;
+   }
+
+   .img-phone-fix {
+      float: none;
+   }
+
+   .img-phone-fix-1 {
+      float: none;
+   }
+
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .carousel{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background-color: transparent;
+   }
+
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr;
+      padding-right: 3rem;
+      grid-auto-columns: calc(( 100% / 1 ) - 1rem);
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .carousel .phone-buy-phone{
+      margin-top: -3.6rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .section .container-5 .slider{
+      display: none;
+   }
+
+   .section .grid-2{
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+   }
+
+   .grid--3-cols-fix-3 .carousel1 .phone .phone-buy-phone{
+      margin-top: -3.6rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .impression{
+      padding: 0 2rem;
+   }   
+
+   .grid-3{
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+   }
+
+   .impression-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .impression-img img{
+      max-width: 40rem;
+      max-height: 30rem;
+      object-fit: cover;
+   }
+
+   .impresstion-text-title{
+      font-size: 3.5rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 1.5rem;
+   }
+
+   .btn-impression{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+   }
+
+   .bonus-0 .filter-phone button{
+      padding: 0.7rem 0.7rem;
+      margin-left: 1rem;
+      font-size: 1rem;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 2rem;
+   }
+
+   .container-0.grid--4-cols .phone .phone-content .tag{
+      font-size: 1rem;
+   }
+
+   .container-0.grid--4-cols .phone .phone-content .phone-title{
+      font-size: 1.5rem;
+   }
+
+   .container-0.grid--4-cols .phone .phone-content li span{
+      font-size: 1.2rem;
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.2rem;
+   }
+
+   .knowledge-active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid-4{
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: none;
+   }
+
+   .grid-5{
+      grid-template-columns: none;
+   }
+
+   .container-6.grid-4{
+      grid-template-columns: 1fr;
+   }
+
+   .knowledge-blog-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .blog-img{
+      padding-top: 2rem;
+   }
+
+   .comment-box-design{
+      height: 8rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .comment .container-3{
+      padding:  0 0rem;   
+   }
+
+   .comment-box-design h3{
+      font-size: 1rem;
+   }
+
+   .comment-box-design p{
+      font-size: 0.7rem;
+   }
+
+   .comment .grid--4-cols{
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .heading-secondary-2{
+      font-size: 2.5rem;
+   }
+
+   .cta-text{
+      font-size: 1.4rem;
+   }
+
+   .cta-form input,
+   .cta-form select{
+      padding: 0.8rem;
+      font-size: 1.3rem;
+   }
+
+   .cta-text-box .btn--form{
+      padding: 0.8rem;
+      font-size: 1.5rem;
+   }
+
+   .cta-form div label{
+      font-size: 1.2rem;
+   }
+
+   .footer .grid--4-cols{
+      display: flex;
+      align-items: stretch;
+   }
+
+   .footer-heading{
+      font-size: 1.4rem;
+      font-weight: 700;
+   }
+
+   .nav-col ul li a,
+   .address-col ul li,
+   .logo-col ul li{
+      font-size: 1rem;
+   }
+
+   .container hr,
+   .container .copyright{
+      display: none;
+   }
+
+   .main-nav-list {
+      display: none;
+   }
+
+   .footer .container.grid--4-cols{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      display: grid;
+   }
+
+   .knowledge-blog-title p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .knowledge-blog-describe p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+}
+
+@media (min-width:340px) and (max-width: 439px) {
+   #sidebar.sidebar{
+      z-index: 3000;
+      height: 16rem;
+   }
+   .youraccount{
+      display: none;
+  }
+   .main-nav-list {
+      display: none;
+   }
+
+   #sidebar.sidebar{
+      z-index: 3000;
+      height: 16rem;
+   }
+
+   .sidebar.active{
+      z-index: 3000;
+      height: 16rem;
+   }
+
+   #menu-icon {
+      z-index: 3000;
+      position: fixed;
+      right: 3%;
+      top: 1%;
+      display: block;
+   }
+
+   .hero{
+      grid-template-columns: 1fr;
+   }
+
+   .hero-img-box{
+      display: flex;
+      justify-content: center;
+   }
+
+   .hero-img-box img{
+      margin-top: -8rem;
+      max-width: 30rem;
+      max-height: 30rem;
+   } 
+
+   .header img {
+      height: 14rem;
+      width: 16rem;
+   }
+
+   .main-nav-list .main-nav-link{
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+
+   .hero-decription{
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 0 2rem;
+      margin-bottom: 2rem;
+   }
+
+   .section-phones{
+      padding: 0;
+   }
+
+   .auto-text{
+      margin: 0 auto;
+   }
+
+   .delivered-phones{
+      display: flex;
+      justify-content: center;
+   }
+
+   .main-nav-list .main-nav-link.nav-cta{
+      font-size:1.5rem ;
+   }
+
+   .heading-primary{
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 0 2rem 2rem 2rem;
+   }
+
+   .section-hero{
+      display: flex;
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+   }
+
+   .hero{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+   }
+
+   .hero-text-box {
+      max-width: 100%;
+   }
+
+   .deliveres-img img{
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+      margin-top: -3rem;
+   }
+
+   .deliveres-img img:last-child{
+      margin-top: -3rem;
+   }
+
+   .delivered-text{
+      font-size: 1.2rem;
+      margin-top: -1rem;
+      padding-bottom: 2rem;
+   }
+
+   .logos img{
+      height: 5.2rem; 
+      margin: 2rem 5rem 0rem 5rem;
+   }
+
+   .fortest-1{
+      display: none;
+   }
+
+   .time .item{
+      width: 4rem;
+      height: 4rem;
+      line-height: 0.9;
+      
+   }
+
+   .time .item p{
+      font-size: 0.8rem;
+   }
+
+   .container-1 .grid--4-cols{
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 1.5rem;
+      row-gap: 2.5rem;
+   }
+
+   .container-1 .grid.grid--4-cols{
+      display: grid;
+      justify-items: center;
+      row-gap: 3rem;
+   }
+
+   .tag{
+      font-size: 1.2rem;
+   }
+
+   .phone-attributes li span{
+      font-size: 1.5rem;
+   }
+
+   .phone-buy-phone .click-here{
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .phone-content p{
+      font-size: 2rem;
+   }
+
+   .fix-tag{
+      font-size: 2.6rem;
+   }
+
+   .grid--3-cols-fix-3,
+   .grid--3-cols-fix-2{
+      width: 32rem;
+   }
+   .container-4 .grid-2-cols-fix-3 .d,
+   .container-6 .grid-2-cols-fix-2 .a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .img-phone-fix-1,
+   .img-phone-fix {
+      max-width: 28rem;
+      object-fit: cover;
+      padding: 0 2rem;
+      float: none;
+   }
+
+
+   .grid--3-cols-fix-3 .carousel1,
+   .grid--3-cols-fix-2 .carousel{
+      display: grid;
+      grid-template-rows:1fr;
+      padding-right: 3rem;
+      grid-auto-columns: calc(( 100% / 1 ) - 2rem);
+   }
+
+   .grid--3-cols-fix-3.c,
+   .grid--3-cols-fix-2.b{
+      margin: 0 auto;
+   }
+
+   .container-4 .grid-2-cols-fix-3,
+   .container-6 .grid-2-cols-fix-2{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .carousel .phone-buy-phone{
+      margin-top: -3.6rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .section .container-5 .slider{
+      display: none;
+   }
+
+   .section .grid-2{
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+   }
+
+   .grid--3-cols-fix-3 .carousel1 .phone .phone-buy-phone{
+      margin-top: -3.6rem;
+      height: 2rem;
+      padding: 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+   }
+
+   .impression{
+      padding: 0 2rem;
+   }   
+
+   .grid-3{
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+   }
+
+   .impression-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .impression-img img{
+      max-width: 28rem;
+      max-height: 25rem;
+      object-fit: cover;
+   }
+
+   .impresstion-text-title{
+      font-size: 2.5rem;
+      font-weight: 600;
+   }
+
+   .impression-text-dash{
+      font-size: 1rem;
+   }
+
+   .impresstion-text-describe{
+      font-size: 1.3rem;
+   }
+
+   .btn-impression{
+      font-size: 1.5rem;
+      margin-top: 3rem;
+   }
+
+   .bonus-0 .filter-phone button{
+      padding: 0.5rem 0.5rem;
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+   }
+
+   .container-0.grid--4-cols{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 2rem;
+      justify-items: center;
+   }
+
+   .phone.phone-5{
+      max-width: 25rem;
+   }
+
+   .container-0.grid--4-cols .phone .phone-content .tag{
+      font-size: 1rem;
+   }
+
+   .container-0.grid--4-cols .phone .phone-content .phone-title{
+      font-size: 1.5rem;
+   }
+
+   .container-0.grid--4-cols .phone .phone-content li span{
+      font-size: 1.2rem;
+   }
+
+   .knowledge-title{
+      margin-bottom: 2rem;
+      padding: 1rem 0rem;
+   }
+
+   .knowledge-title p{
+      font-size: 2.2rem;
+   }
+
+   .knowledge-active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .grid-4{
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: none;
+   }
+
+   .grid-5{
+      grid-template-columns: none;
+   }
+
+   .container-6.grid-4{
+      grid-template-columns: 1fr;
+   }
+
+   .knowledge-blog-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .knowledge-blog-img img{
+      max-width: 28rem;
+      max-height: 25rem;
+      object-fit: cover;
+   }
+
+   .blog-img{
+      padding-top: 2rem;
+   }
+
+   .comment-box-design{
+      height: 8rem;
+   }
+
+   .cta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .cta-img-box{
+      display: none;
+   }
+
+   .comment .container-3{
+      padding:  0 0rem;   
+   }
+
+   .comment-box-design h3{
+      font-size: 1rem;
+   }
+
+   .comment-box-design p{
+      font-size: 0.7rem;
+   }
+
+   .comment .grid--4-cols{
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .heading-secondary-2{
+      font-size: 2.5rem;
+   }
+
+   .cta-text{
+      font-size: 1.4rem;
+   }
+
+   .cta-form input,
+   .cta-form select{
+      padding: 0.8rem;
+      font-size: 1.3rem;
+   }
+
+   .cta-text-box .btn--form{
+      padding: 0.8rem;
+      font-size: 1.5rem;
+   }
+
+   .cta-form div label{
+      font-size: 1.2rem;
+   }
+
+   .footer .grid--4-cols{
+      display: flex;
+      align-items: stretch;
+   }
+
+   .footer-heading{
+      font-size: 1.4rem;
+      font-weight: 700;
+   }
+
+   .nav-col ul li a,
+   .address-col ul li,
+   .logo-col ul li{
+      font-size: 1rem;
+   }
+
+   .container hr,
+   .container .copyright{
+      display: none;
+   }
+
+   .main-nav-list {
+      display: none;
+   }
+
+   .footer .container.grid--4-cols{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      display: grid;
+   }
+
+   .cart-fixed{
+      right: 2rem;
+      bottom: -2rem;
+   }
+
+   
+   .knowledge-blog-title p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .knowledge-blog-describe p{
+      padding-right: 2rem;
+      text-align: justify;
+   }
+
+   .auto-text{
+      margin: 0 2rem;
+   }
+
+   .auto-text input{
+      margin: 0 auto;
+      padding: 0;
+      max-width: 20rem;
+   }
+
+   .header img{
+      margin-top: -6rem;
+      margin-left: -2rem;
+   }
+
+   
+
+
+   /* Side bar */
+   .sidebar{
+      z-index: 3000;
+      padding-top: 10px;
+      height: 45%;
+   }
+
+   .sidebar-link{
+      font-size: 1.5rem;
+   }
+
+   /* Comment */
+   .comment-box-img{
+      height: 3rem;
+      width: 3rem;
+   }
+
+    /* Fix */
+   .phone-box .phone-buy-phone{
+      margin-top: -5rem;
+   }
+   @media (min-width: 820px) and (max-width: 1180px){
+      .main-nav-list{
+         gap: 5px;
+      }
+   }
+}

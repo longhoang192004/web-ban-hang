@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+    <link rel="icon" type="image/x-icon" href="./img/banner/favicon.ico">
+
+    <link rel="stylesheet" href="./mainadmin.css">
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" type="text/css" href="./reponsiveadmin.css">
+    <link rel="stylesheet" href="./baseadmin.css">
+    <link rel="stylesheet" href="./loginac.css">
+    <link rel="stylesheet" href="./accountadmin.css">
+    <link rel="stylesheet" href="./productdetailac.css">
+    <link rel="stylesheet" href="./cartac.css">
+    <link rel="stylesheet" href="./homepageac.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./menuphu.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+
+   
+   <!---------------------------------------------------RESPONSIVE--------------------------------------------------->
+   <style>
+                  @media only screen and (max-width: 63.9375em) {
+                    *{
+                      padding: 0;
+                      margin: 0;
+                      box-sizing: border-box;
+                    }
+                    
+                    html{
+                      font-size: 62.5%;
+                    }
+                    
+                    body{
+                      font-family: 'Montserrat', sans-serif;
+                      height: max-content;
+                      line-height: 1;
+                      font-weight: 400;
+                      color: #555;
+                    }
+
+                    .header {
+                      flex-direction: column;
+                      align-items: center;
+                      height: 200px;
+                      width: 100%;
+                      padding: 0rem;
+                  }
+                  .header img {
+                    height: 20rem;
+                    width: 25rem;
+                  }
+          
+                  .header-left {
+                      flex-direction: column;
+                      align-items: center;
+                  }
+          
+                  .header-logo{
+                      position: absolute;
+                      top: 0px;
+                      padding: 0;
+                      height: 100px;
+                      width: 30rem;
+                      z-index: 1;
+                  }
+                  
+                  .logo{
+                    height: 40rem;
+                    z-index: 1;
+                  }
+
+                  .section-hero{
+                    display: none;
+                  }
+
+                  .main-nav {
+                    margin-top: 20px;
+                    margin-left: 10px;
+                      width: 100%;
+                      text-align: center;
+                      z-index: 2;
+          
+                  }
+          
+                  .main-nav-list {
+                    display: none;
+                    z-index: 2;
+                      flex-direction: row;
+                      padding-right: 0;
+                      align-items: center;
+                      gap: 2px;
+                      width: 95%;
+                  }
+
+                  .main-nav-link {
+                    font-size: 10px;
+                  }
+
+                  .youraccount {
+                      width: 24px;
+                      height: 24px;
+                  }
+
+
+
+
+
+
+
+
+
+
+                  .grid {
+                    display: block;
+                  }
+
+                  .logo-col,
+                  .address-col,
+                  .nav-col {
+                    flex-direction: column;
+                    margin-top: 2rem;
+                  }
+
+                  .footer-heading {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                  }
+
+                  .footer-nav li a,
+                  .contact,
+                  .social {
+                    font-size: 1.2rem;
+                  }
+
+                  .contact p {
+                    margin-top: 1rem;
+                  }
+
+                  .social {
+                    font-size: 1.2rem;
+                  }
+
+                  .social p {
+                    margin-top: 0;
+                  }
+
+                  .qr-code {
+                    width: 5rem;
+                    height: 5rem;
+                  }
+
+                  .footer-app-mac,
+                  .footer-app-android {
+                    height: 2rem;
+                  }
+
+                 #menu-icon {
+                  position: fixed;
+                  top: 0;
+                  right: 0;
+                  display: block;
+                 }
+
+                 #sidebar.sidebar{
+                    height: 25rem;
+                 }
+              
+                 .sidebar.active{
+                    height: 25rem;
+                 }
+                 .sidebar{
+                  padding-top: 10px;
+                  height: 35%;
+                 }
+            
+                 .sidebar-link{
+                  font-size: 1.5rem;
+                 }
+
+              }
+   </style>
+
+
+
+
+
+
+
+
+
+
+
+   
+   <style>
+            form.example input[type=text] {
+              padding: 10px;
+              font-size: 17px;
+              border: 1px solid grey;
+              float: left;
+              width: 80%;
+              background: #f1f1f1;
+            }
+          
+            form.example button {
+              float: left;
+              width: 20%;
+              padding: 10px;
+              background: #2196F3;
+              color: white;
+              font-size: 17px;
+              border: 1px solid grey;
+              border-left: none;
+              cursor: pointer;
+            }
+          
+            form.example button:hover {
+              background: #0b7dda;
+            }
+          
+            form.example::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            .wrapper {
+              margin-top:30px;
+            }
+  </style>
+
+   
+
+
+   
+</head>
+<body>
+    <!-- -------------------------------Header---------------------------- -->
+
+    <header class="header">
+      <a href="./main.html" class="logo header-logo"><img class="logo header-logo"
+          src="./img/header/HLL_STORE-removebg-preview.png"
+         ></a>
+         <a class="youraccount" href="./taikhoan.html"><img src="./img/admin/noavatar.png" alt="" class="youraccount"></a>
+      <nav class="main-nav">
+          <ul class="main-nav-list">
+              
+              <li><a class="main-nav-link nav-cta" href="./dangnhap.html">Đăng nhập</a></li>
+              
+          </ul>
+          <div id="menu-icon">&#9776;</div>
+      </nav>
+
+  </header>
+  <div id="sidebar" class="sidebar">
+    <ul class="sidebar-list">
+        <li><a class="sidebar-link" href="./aboutus.html">About us</a></li>
+        <li><a class="sidebar-link" href="./lienhe.html">Liên hệ</a></li>
+        <li><a class="sidebar-link" href="./dangky.html">Đăng kí</a></li>
+        <li><a class="sidebar-link" href="./dangnhap.html">Đăng nhập</a></li>
+        <li><a class="sidebar-link" href="./taikhoan.html">Your account</a></li>
+    </ul>
+  </div>
+
+  <!-- -------------------------------END Header---------------------------- -->
+
+
+    <!-- Content -->
+    <div class="container container-topct" style="background-color: rgb(247, 199, 199);">
+        <div class="wrapper user">
+        <div class="row">
+            <div class="col-lg-4 col-12 account-menu" style="background-color: rgb(109, 64, 48);">
+              <div class="heading">
+                  <img src="./img/admin/noavatar.png" alt="" class="heading-img">
+                  <span class="heading-name_acc" id="user-email">User</span>
+              </div>
+              <div class="menu-manager">
+                <div class="my-profile item-manager active">
+                <div class="my-profile-title ">
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                    <div class="name">Hồ sơ của tôi</div>
+                </div>
+              </div>
+              <div class="my-password item-manager">
+                <div class="my-password-title">
+                    <div class="icon"><i class="fas fa-key"></i></div>
+                    <div class="name">Đổi mật khẩu</div>
+                </div>
+              </div>
+              <div class="my-order item-manager">
+                <div class="my-order-title">
+                    <div class="icon"><i class="fas fa-shopping-bag"></i></div>
+                    <div class="name">Đơn hàng của tôi</div>
+                </div>
+              </div>
+              <div class="my-listlike item-manager">
+                <div class="my-listlike-title">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <div class="name">Danh sách yêu thích</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="col-lg-8 col-12 content">
+            <div class="menu-detail">
+                <div class="detial__my-profile col-lg-11 item-detail active">
+                <div class="heading-edit-account">
+                  <div class="my-heading">
+                    <h2>Hồ sơ của tôi</h2>
+                  </div>
+                    <div class="form-group">
+                    <label for="fullname" class="form-label">Tên đầy đủ</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="VD: LongLy" class="form-control"
+                        value="LongLy">
+                    <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: LongLy@gmail.com" class="form-control"
+                        value="LongLy@gmail.com">
+                    <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                    <label for="email" class="form-label">Địa chỉ</label>
+                    <input id="email" name="email" type="text" placeholder="VD: 73/1 Nguyễn Đỗ Cung" class="form-control"
+                        value="73/1 Nguyễn Đỗ Cung, phường Tây Thạnh, quận Tân Phú, TP.HCM">
+                    <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                    <label for="sdt" class="form-label">Số điện thoại</label>
+                    <input id="sdt" name="sdt" type="number" placeholder="VD: 089" class="form-control" value="0912420530">
+                    <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                    <label for="avatar" class="form-label">Cập nhật avatar</label>
+                    <input id="avatar" name="avatar" type="file" class="form-control">
+                    <span class="form-message"></span>
+                    </div>
+                    <button class="form-submit" style="color: black;">Lưu</button>
+                </div>
+                </div>
+
+                <div class="detail__confirm-password item-detail">
+                <div class="my-heading">
+                    <h2>Đổi lại mật khẩu</h2>
+                </div>
+                <div class="form-group form-group-old-password">
+                    <div style="display:flex;justify-content: space-between;">
+                    <label for="password" class="form-label">Mật khẩu cũ</label>
+                    <span class="show-hide"><i class="fas fa-eye"></i></span>
+                    </div>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group form-group-new-password">
+                    <div style="display:flex;justify-content: space-between;">
+                    <label for="password-new" class="form-label">Mật khẩu mới</label>
+                    <span class="show-hide-two"><i class="fas fa-eye fa-eye-2"></i></span>
+                    </div>
+                    <input id="password-new" name="password-new" type="password" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group form-group-confirm-password">
+                    <div style="display:flex;justify-content: space-between;">
+                      <label for="password-confirm" class="form-label">Nhập lại mật khẩu mới</label>
+                      <span class="show-hide-three"><i class="fas fa-eye fa-eye-3"></i></span>
+                    </div>
+                    <input id="password-confirm" name="password-confirm" type="password" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <button class="form-submit" style="color: black;">Lưu</button>
+                </div>
+
+                <div class="detail__my-order item-detail">
+                  <div class="my-heading">
+                      <h2>Đơn hàng </h2>
+                  </div>
+                <div class="detail__my-order-content">
+                    <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <th>MĐH</th>
+                        <th>Ngày</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                        <th>Chi tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>#1</td>
+                        <td>26-07-2024</td>
+                        <td>13.000.000 VNĐ</td>
+                        <td>
+                            <span class="btn-stt blue">Đang xác nhận</span>
+                        </td>
+                        <td><a href="./ip15max.html" target="_blank">Xem</a></td>
+                        </tr>
+                        <tr>
+                        <td>#2</td>
+                        <td>05-06-2021</td>
+                        <td>30.000.000 VNĐ</td>
+                        <td>
+                            <span class="btn-stt green">Đã giao</span>
+                        </td>
+                        <td><a href="./ip15max.html" target="_blank">Xem</a></td>
+                        </tr>
+                        <tr>
+                        <td>#3</td>
+                        <td>15-05-2021</td>
+                        <td>12.100.000 VNĐ</td>
+                        <td>
+                            <span class="btn-stt red">Đã hủy</span>
+                        </td>
+                        <td><a href="./ip15max.html" target="_blank">Xem</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>#4</td>
+                          <td>16-04-2024</td>
+                          <td>9.100.000 VNĐ</td>
+                          <td>
+                            <span class="btn-stt green">Đã giao</span>
+                          </td>
+                          <td><a href="./ip15max.html" target="_blank">Xem</a></td>
+                          </tr>
+                    </tbody>
+                    </table>
+                </div>
+                </div>
+
+                <div class="detial__my-listlike item-detail">
+                  <div class="my-heading">
+                    <h2>Danh sách sản phẩm yêu thích</h2>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                      <a href="./main.html" class="product__new-item">
+                        <div class="card" style="width: 100%">
+                          <div>
+                            <img class="card-img-top img-product" src="./img/smartphone/IP14pro128.png" alt="Card image cap">
+                            <form action="" class="hover-icon hidden-sm hidden-xs">
+                              <input type="hidden">
+                              <a href="./checkout.html" class="btn-add-to-cart" title="Mua ngay">
+                                <i class="fas fa-cart-plus"></i>
+                              </a>
+                              <a data-toggle="modal" data-target="#modal-quickview" class="quickview" title="Xem nhanh">
+                                <i class="fas fa-search"></i>
+                              </a>
+                            </form>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title custom__name-product">
+                              IPHONE 15 PRO MAX
+                            </h5>
+                            <div class="product__price">
+                              <p class="card-text price-color product__price-old">25.000.000 đ</p>
+                              <p class="card-text price-color product__price-new">20.500.000 đ</p>
+                            </div>
+                            <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <span class="home-product-item__sold">103 đã bán</span>
+                            </div>
+                            <div class="sale-off">
+                              <span class="sale-off-percent">30%</span>
+                              <span class="sale-off-label">GIẢM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                      <a href="./main.html" class="product__new-item">
+                        <div class="card" style="width: 100%">
+                          <div>
+                            <img class="card-img-top img-product" src="./img/smartphone/A24.png" alt="Card image cap">
+                            <form action="" class="hover-icon hidden-sm hidden-xs">
+                              <input type="hidden">
+                              <a href="./checkout.html" class="btn-add-to-cart" title="Mua ngay">
+                                <i class="fas fa-cart-plus"></i>
+                              </a>
+                              <a data-toggle="modal" data-target="#modal-quickview" class="quickview" title="Xem nhanh">
+                                <i class="fas fa-search"></i>
+                              </a>
+                            </form>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title custom__name-product">
+                                IPHONE 12
+                            </h5>
+                            <div class="product__price">
+                              <p class="card-text price-color product__price-old">10.000.000 đ</p>
+                              <p class="card-text price-color product__price-new">8.000.000 đ</p>
+                            </div>
+                            <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <span class="home-product-item__sold">428 đã bán</span>
+                            </div>
+                            <div class="sale-off">
+                              <span class="sale-off-percent">20%</span>
+                              <span class="sale-off-label">GIẢM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                      <a href="./main.html" class="product__new-item">
+                        <div class="card" style="width: 100%">
+                          <div>
+                            <img class="card-img-top img-product" src="./img/smartphone/OP A16K.png" alt="Card image cap">
+                            <form action="" class="hover-icon hidden-sm hidden-xs">
+                              <input type="hidden">
+                              <a href="./checkout.html" class="btn-add-to-cart" title="Mua ngay">
+                                <i class="fas fa-cart-plus"></i>
+                              </a>
+                              <a data-toggle="modal" data-target="#modal-quickview" class="quickview" title="Xem nhanh">
+                                <i class="fas fa-search"></i>
+                              </a>
+                            </form>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title custom__name-product">
+                              HUAWEI P60
+                            </h5>
+                            <div class="product__price">
+                              <p class="card-text price-color product__price-old">5.000.000 đ</p>
+                              <p class="card-text price-color product__price-new">4.000.000 đ</p>
+                            </div>
+                            <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <span class="home-product-item__sold">229 đã bán</span>
+                            </div>
+                            <div class="sale-off">
+                              <span class="sale-off-percent">30%</span>
+                              <span class="sale-off-label">GIẢM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                      <a href="./main.html" class="product__new-item">
+                        <div class="card" style="width: 100%">
+                          <div>
+                            <img class="card-img-top img-product" src="./img/smartphone/OP A78.png" alt="Card image cap">
+                            <form action="" class="hover-icon hidden-sm hidden-xs">
+                              <input type="hidden">
+                              <a href="./checkout.html" class="btn-add-to-cart" title="Mua ngay">
+                                <i class="fas fa-cart-plus"></i>
+                              </a>
+                              <a data-toggle="modal" data-target="#modal-quickview" class="quickview" title="Xem nhanh">
+                                <i class="fas fa-search"></i>
+                              </a>
+                            </form>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title custom__name-product">
+                              OPPO A78 XANH
+                            </h5>
+                            <div class="product__price">
+                              <p class="card-text price-color product__price-old">10.000.000 đ</p>
+                              <p class="card-text price-color product__price-new">7.000.000 đ</p>
+                            </div>
+                            <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <span class="home-product-item__sold">428 đã bán</span>
+                            </div>
+                            <div class="sale-off">
+                              <span class="sale-off-percent">30%</span>
+                              <span class="sale-off-label">GIẢM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                      <a href="./main.html" class="product__new-item">
+                        <div class="card" style="width: 100%">
+                          <div>
+                            <img class="card-img-top img-product" src="./img/smartphone/OP A78.png" alt="Card image cap">
+                            <form action="" class="hover-icon hidden-sm hidden-xs">
+                              <input type="hidden">
+                              <a href="./checkout.html" class="btn-add-to-cart" title="Mua ngay">
+                                <i class="fas fa-cart-plus"></i>
+                              </a>
+                              <a data-toggle="modal" data-target="#modal-quickview" class="quickview" title="Xem nhanh">
+                                <i class="fas fa-search"></i>
+                              </a>
+                            </form>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title custom__name-product">
+                              OPPO A78 XANH
+                            </h5>
+                            <div class="product__price">
+                              <p class="card-text price-color product__price-old">10.000.000 đ</p>
+                              <p class="card-text price-color product__price-new">7.000.000 đ</p>
+                            </div>
+                            <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <span class="home-product-item__sold">428 đã bán</span>
+                            </div>
+                            <div class="sale-off">
+                              <span class="sale-off-percent">30%</span>
+                              <span class="sale-off-label">GIẢM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div><div class="col-lg-4 col-md-6 col-sm-12 ">
+                      <a href="./main.html" class="product__new-item">
+                        <div class="card" style="width: 100%">
+                          <div>
+                            <img class="card-img-top img-product" src="./img/smartphone/OP A78.png" alt="Card image cap">
+                            <form action="" class="hover-icon hidden-sm hidden-xs">
+                              <input type="hidden">
+                              <a href="./checkout.html" class="btn-add-to-cart" title="Mua ngay">
+                                <i class="fas fa-cart-plus"></i>
+                              </a>
+                              <a data-toggle="modal" data-target="#modal-quickview" class="quickview" title="Xem nhanh">
+                                <i class="fas fa-search"></i>
+                              </a>
+                            </form>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title custom__name-product">
+                              OPPO A78 XANH
+                            </h5>
+                            <div class="product__price">
+                              <p class="card-text price-color product__price-old">10.000.000 đ</p>
+                              <p class="card-text price-color product__price-new">7.000.000 đ</p>
+                            </div>
+                            <div class="home-product-item__action">
+                              <span class="home-product-item__like home-product-item__like--liked">
+                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                              </span>
+                              <div class="home-product-item__rating">
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="home-product-item__star--gold fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <span class="home-product-item__sold">428 đã bán</span>
+                            </div>
+                            <div class="sale-off">
+                              <span class="sale-off-percent">30%</span>
+                              <span class="sale-off-label">GIẢM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+     <!-- End Content -->
+
+    <section class="container before-footer">
+        <hr>
+    </section>
+
+    <!-- -------------------------------FOOTER--------------------------- -->
+    <footer class="footer" style="clear: both; background-color: white;">
+      <div class="container grid grid--5-cols">
+          <div class="logo-col">
+              <p class="footer-heading">Follow Us</p>
+              <ul class="social-link">
+                  <li class="social">
+                      <a href="#">
+                          <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                      <p><img src="./img/facebook.png" class="icons1">&nbsp;Facebook</p>
+                  </li>
+                  <li class="social">
+                      <a href="">
+                          <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                      <p><img src="./img/instagram.jpg" class="icons">&nbsp;Instagram</p>
+                  </li>
+                  <li class="social">
+                      <a href="">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <p><img src="./img/linkedin.png" class="icons">&nbsp;Linkedin</p>
+                  </li>
+              </ul>
+          </div>
+          
+          <div class="nav-col">
+              <p class="footer-heading">Contacts</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a class="fl" href="#">longlyly@gmail.com</a></li>
+                  <li class="footer-link"><a class="fl" href="#">HOT LINE: 0398811006</a></li>
+                  <li class="footer-link"><a href="#">.</a></li>
+                  <li class="footer-link"><a href="#">.</a></li>
+                  <li class="footer-link"><a href="#">.</a></li>
+              </ul>
+          </div>
+          
+          <div class="nav-col">
+              <p class="footer-heading">Account</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a class="fl" href="#">Create Account</a></li>
+                  <li class="footer-link"><a href="#">Sign in</a></li>
+                  <li class="footer-link"><a href="#">IOS App</a></li>
+                  <li class="footer-link"><a href="#">Androind App</a></li>
+                  <li class="footer-link"><a href="#">Twitter</a></li>
+              </ul>
+          </div>
+          
+          <div class="nav-col">
+              <p class="footer-heading">Store</p>
+              <ul class="footer-nav">
+                  <li class="footer-link"><a href="#">About Us</a></li>
+                  <li class="footer-link"><a href="#">HLL Policies</a></li>
+                  <li class="footer-link"><a href="#">HLL Careers</a></li>
+                  <li class="footer-link"><a href="#">Media Contacts</a></li>
+                  <li class="footer-link"><a href="#">Flash Deals</a></li>
+              </ul>
+          </div>
+          
+          <div class="nav-col">
+              <p class="footer-heading">HLL Download</p>
+              <table class="footer-app">
+                  <tr>
+                      <th> <div class="footer-qr">
+                              <img src="./img/qr/qr-code.png" alt="Mã Qr" class="qr-code">
+                          </div>
+                      </th>
+                      <th>
+                          <div>
+                              <a href="#" class="footer-qr-link">
+                                  <img src="./img/qr/app-store.png" alt="App Store" class="footer-app-mac">
+                              </a>
+                          </div>
+                          <div>
+                              <a href="#" class="footer-qr-link">
+                                  <img src="./img/qr/google-play.png" alt="Google Play" class="footer-app-android">
+                              </a>
+                          </div>
+                      </th>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </footer>
+    
+  <br><br><br>
+  <script src="./mainadmin.js"></script>
+  <script>
+    const pass_field = document.querySelector('#password');
+    const show_btn = document.querySelector('.fa-eye')
+    show_btn.addEventListener("click", function () {
+      if (pass_field.type === "password") {
+        pass_field.type = "text";
+        show_btn.classList.add("hide");
+      } else {
+        pass_field.type = "password";
+        show_btn.classList.remove("hide");
+      }
+    });
+  </script>
+  <script>
+    const pass_field2 = document.querySelector('#password-new');
+    const show_btn2 = document.querySelector('.fa-eye-2')
+    show_btn2.addEventListener("click", function () {
+      if (pass_field2.type === "password") {
+        pass_field2.type = "text";
+        show_btn2.classList.add("hide");
+      } else {
+        pass_field2.type = "password";
+        show_btn2.classList.remove("hide");
+      }
+    });
+  </script>
+  <script>
+    const pass_field3 = document.querySelector('#password-confirm');
+    const show_btn3 = document.querySelector('.fa-eye-3')
+    show_btn3.addEventListener("click", function () {
+      if (pass_field3.type === "password") {
+        pass_field3.type = "text";
+        show_btn3.classList.add("hide");
+      } else {
+        pass_field3.type = "password";
+        show_btn3.classList.remove("hide");
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        updateHeader();
+    });
+    function updateHeader() {
+        const loggedIn = localStorage.getItem("loggedIn");
+        const email = localStorage.getItem("email");
+
+        if (loggedIn === "true" && email) {
+            const loginLinks = document.querySelectorAll(".main-nav .main-nav-link.nav-cta[href='./dangnhap.html']");
+            loginLinks.forEach(link => {
+                link.innerHTML = `<span style="margin-right: 0px; font-size: 15px; font-weight: 500;">${email}</span>`;
+                link.href = "#";
+            });
+
+            const logoutLink = document.createElement("li");
+            logoutLink.innerHTML = `<a class="main-nav-link nav-cta" href="#" onclick="logout()">Đăng xuất</a>`;
+            document.querySelector(".main-nav-list").appendChild(logoutLink);
+        }
+    }
+    function logout() {
+        localStorage.removeItem("loggedIn");
+        localStorage.removeItem("email");
+        localStorage.removeItem("password");
+        window.location.href = "./dangnhap.html";
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      updateUserEmail();
+    });
+    function updateUserEmail() {
+      const loggedIn = localStorage.getItem("loggedIn");
+      const email = localStorage.getItem("email");
+  
+      if (loggedIn === "true" && email) {
+          const userEmailElement = document.getElementById("user-email");
+          if (userEmailElement) {
+              userEmailElement.innerText = email;
+          }
+      }
+  }
+  </script>
+  
+
+
+
+</body>
+</html>

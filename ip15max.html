@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="icon" type="image/x-icon" href="./img/banner/favicon.ico">
+    <link rel="stylesheet" href="./buynow.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="headerlogo"><img class="logo" src="./img/header/HLL_STORE-removebg-preview.png"></div>
+        
+        <div class="header-text">
+            <ul>
+                <div class="header-text-box">
+                    <li>
+                        <ion-icon name="call" class="check-fix"></ion-icon>
+                        <a href="./lienhe.html">Gọi đặt hàng</a>
+                    </li>
+                </div>
+                <div class="header-text-box">
+                    <li>
+                        <ion-icon name="shield-checkmark" class="check-fix"></ion-icon>
+                        <a href="./lienhe.html">Chính sách bảo hành</a>
+                    </li>
+                </div>
+                <div class="header-text-box">
+                    <li>
+                        <ion-icon name="storefront" class="check-fix"></ion-icon> 
+                        <a href="./lienhe.html">Hệ thống cửa hàng</a>
+                    </li>
+                </div>
+                <div class="header-text-box">
+                    <li>
+                        <ion-icon name="arrow-redo-circle" class="check-fix"></ion-icon>
+                        <a href="./main.html">Quay về cửa hàng</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-box">
+            <div id="product-info"></div>
+        </div>
+        <div class="container-choose">
+            <div class="container-choose-header">
+                <div class="container-choose-p">
+                    <p style="text-align: center;">
+                        THÔNG TIN ĐIỆN THOẠI
+                    </p>
+                    <p class="ttphone">Màn hình: OLED6.7"Super Retina XDR</p>
+                    <p class="ttphone">Hệ điều hành: iOS 17</p>
+                    <p class="ttphone">Camera sau: Chính 48 MP & Phụ 12 MP, 12 MP</p>
+                    <p class="ttphone">Camera trước: 12 MP</p>
+                    <p class="ttphone">Chip: Apple A17 Pro 6 nhân</p>
+                    <p class="ttphone">RAM: 8 GB</p>
+                    <p class="ttphone">Dung lượng lưu trữ: 256 GB</p>
+                    <p class="ttphone">SIM: 1 Nano SIM & 1 eSIM,  Hỗ trợ 5G</p>
+                    <p class="ttphone">Pin, Sạc: 4422 mAh,  20 W</p>
+                    <p class="ttphone">Hãng: iPhone (Apple).</p>
+                    </div>
+                <div class="container-choose-fix">
+                    <div class="container-choose-choose">
+                        <div class="color green">
+                            <input type="radio" id="xanh" name="color" checked="checked" class="input xanh">
+                            <label for="xanh" class="input xanh">Xanh</label>
+                        </div>
+                        <div class="color blue">
+                            <input type="radio" id="lam" name="color" class="input do">
+                            <label for="lam" class="input lam">Lam</label>
+                        </div>
+                        <div class="color gray">
+                            <input type="radio" id="xam" name="color" class="input xam">
+                            <label for="xam" class="input xam">Xám</label>
+                        </div>
+                        <div class="color black">
+                            <input type="radio" id="den" name="color" class="input den">
+                            <label for="den" class="input den">Đen</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-choose-offer">
+                    <div class="container-choose-offer-header">
+                        <p>Khuyến mãi</p>
+                    </div>
+                    <div class="container-choose-offer-content">
+                        <ul>
+                            <li><b>"HÈ SALE CỰC HOT - ƯU ĐÃI CỰC COOL"</b> lên đến 3 triệu từ ngày 1.6, <a href="#">xem chi tiết</a></li>
+                            <li>Tặng ngay phần quà có trị giá <strong>800.000đ</strong> khi mua từ 3 sản phẩm trở lên</li>
+                            <li>Trả góp 0% lãi suất - Đưa trước chỉ với 0đ</li>
+                            <li>Gia hạn bảo hành và mua mới, <a href="#">xem chi tiết</a></li>
+                            <li>Free ship khu vực phía Nam và đơn hàng trên <strong>30.000.000đ</strong></li>
+                            <li>Thu cũ đổi mới giảm ngay <strong>200.000đ</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container-choose-buy">
+                    <div class="container-choose-buy-now" onclick="thanhtoan()">
+                        <a class="container-choose-buy1" href="./giaohang.html">Thanh toán</a>
+                    </div>
+                    <div class="container-choose-buy-now" onclick="thanhtoan()">
+                        <a class="container-choose-buy1" href="./giaohang.html">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-2">
+        <div class="container-policy">
+            <div class="container-policy-box">
+                <p class="container-policy-text">Chính sách bảo hành</p>
+            </div>
+            <ul>
+                <li>
+                    <ion-icon name="checkmark-circle" class="check"></ion-icon>
+                    Bảo hành chính hãng<strong> 12 tháng(Miễn phí)</strong>: Bảo hành sửa chữa thay thế linh kiện 
+                    tại các trung tâm bảo hành ủy quyền của Apple và các hãng liên quan. Bao test và 
+                    đổi sản phẩm trong 30 ngày.
+                </li>
+                <li>
+                    <ion-icon name="checkmark-circle" class="check"></ion-icon>
+                    Bảo hành chính hãng<strong> 36 tháng( + 900.000đ)</strong>: Bảo hành sửa chữa thay thế linh kiện 
+                    tại các trung tâm bảo hành ủy quyền của Apple và các hãng liên quan. Bao test và 
+                    đổi sản phẩm trong 24 tháng.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="container-address">
+            <div class="container-add">
+                <p>Địa chỉ cửa hàng</p>
+            </div>
+            <ul>
+                <li>
+                    <ion-icon name="return-down-forward-outline" class="check-1"></ion-icon>
+                    Cơ sở Chính: 1111 Lê Lai, Phường 12, Gò Vấp, TP.HCM:<strong> 0123456789</strong></li>
+                <li>
+                    <ion-icon name="return-down-forward-outline" class="check-1"></ion-icon>
+                    Cơ sở 1: 1 Thống Nhất, Phường 10, Gò Vấp, TP.HCM:<strong> 012122121</strong></li>
+                <li>
+                    <ion-icon name="return-down-forward-outline" class="check-1"></ion-icon>
+                    Cơ sở 2: 28 Bạch Đằng, Linh Trung, Thủ Đức, TP.HCM:<strong> 012124232</strong></li>
+                <li>
+                    <ion-icon name="return-down-forward-outline" class="check-1"></ion-icon>
+                    Cơ sở 3: 1 Trường Chính, Hải Hòa, Hai Bà Trưng, Hà Nội:<strong> 0432424322</strong></li>
+                <li>
+                    <ion-icon name="return-down-forward-outline" class="check-1"></ion-icon>
+                    Cơ sở 4: 1 Lam Sơn, Thạnh Tây, Bắc Cầu, Thanh Hóa:<strong> 012122121</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr style="margin-top: 5rem; margin-bottom: 5rem; max-width: 130rem;">
+
+    <footer class="footer">
+        <div class="container grid grid--4-cols">
+            <div class="logo-col">
+                <p class="footer-heading">Follow Us</p>
+                <ul class="social-link">
+                    <li class="social">
+                        <a href="#">
+                            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                        </a>
+                        <p>Facebook</p>
+                    </li>
+                    <li class="social">
+                        <a href="./">
+                            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                        </a>
+                        <p>Instagram</p>
+                    </li>
+                    <li class="social">
+                        <a href="./">
+                            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                        </a>
+                        <p>Linkedin</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contacts</p>
+                <ul class="contact">
+                            <li>
+                                1111 Phạm Văn Bạch, Phường 12, Gò Vấp, TP.HCM</li>
+                            <li>
+                                1 Lê Lai, Phường 12, Tân Phú, Hà Nội</li>
+                            <li>
+                                <a class="contact-num" href="tel:012-345-6789">012-345-6789</a></li>
+                            <li>
+                                <a class="contact-mail" href="mailto:ngocchoanne@gmail.com">ngocchoanne@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="nav-col">
+                <p class="footer-heading">Account</p>
+                <ul class="footer-nav">
+                    <li class="footer-link"><a class="fl" href="#">Create Account</a></li>
+                    <li class="footer-link"><a href="#">Sign in</a></li>
+                    <li class="footer-link"><a href="#">IOS App</a></li>
+                    <li class="footer-link"><a href="#">Androind App</a></li>
+                    <li class="footer-link"><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="nav-col">
+                <p class="footer-heading">Store</p>
+                <ul class="footer-nav">
+                    <li class="footer-link"><a href="#">About Us</a></li>
+                    <li class="footer-link"><a href="#">HLL Policies</a></li>
+                    <li class="footer-link"><a href="#">HLL Careers</a></li>
+                    <li class="footer-link"><a href="#">Media Contacts</a></li>
+                    <li class="footer-link"><a href="#">Flash Deals</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            var params = new URLSearchParams(window.location.search);
+            var productId = params.get('id');
+            var productName = decodeURIComponent(params.get('name'));
+            var productPrice = params.get('price');
+            var productImage = decodeURIComponent(params.get('image'));
+
+            var productInfoDiv = document.getElementById('product-info');
+            productInfoDiv.innerHTML = `
+                <p>Mua Iphone 15 Pro Max Bản Giới Hạn </strong> chỉ với
+                <strong>14.000.000đ</strong> -<a style="color:rgba(233, 135, 68, 0.89)"> Mua ngay nào!</a></p>
+                <img src="./img/smartphone/iphone15.jpg" alt="Iphone 15 Pro Max Bản Giới Hạn">
+            `;
+        });
+    </script>
+</body>
+</html>

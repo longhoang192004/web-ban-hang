@@ -1,0 +1,21 @@
+.filter-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.filter-phone button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 4rem;
+    transition: all 0.2s;
+    border: 1px solid rgba(124, 115, 119, 0.8);
+}
+
+.filter-phone button:hover{
+    transform: scale(1.1);
+    background-color: rgba(124, 115, 119, 0.8);
+    color: white;
+}

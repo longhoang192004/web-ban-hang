@@ -1,0 +1,154 @@
+@media only screen and (max-width: 63.9375em) {
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          
+          html{
+            font-size: 62.5%;
+          }
+          
+          body{
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            height: max-content;
+            line-height: 1;
+            font-weight: 400;
+            color: #555;
+          }
+
+          .header {
+            flex-direction: column;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            padding: 0rem;
+        }
+
+        .header-left {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-logo{
+            position: absolute;
+            align-items: center;
+            height: 300px;
+            width: 35rem;
+            z-index: 1;
+        }
+        
+        .logo{
+          height: 30rem;
+          z-index: 1;
+        }
+
+        .section-hero{
+          display: none;
+        }
+
+        .main-nav {
+          margin-top: 20px;
+          margin-left: 20px;
+            width: 100%;
+            text-align: right;
+            z-index: 2;
+
+        }
+        .youraccount{
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          float: right;
+          vertical-align: top;
+          position: fixed;
+          top: 0;
+          right: 5px;
+          z-index: 2;
+
+        }
+
+        .main-nav-list {
+          z-index: 2;
+            flex-direction: row;
+            padding-right: 0;
+            align-items: center;
+            gap: 1px;
+            width: 95%;
+        }
+
+        .main-nav-link {
+          font-size: 10px;
+        }
+
+        .youraccount {
+            width: 24px;
+            height: 24px;
+        }
+
+        .main-nav-link.nav-cta:link,
+        .main-nav-link.nav-cta:visited{
+          padding: 1rem 0.5rem;
+          color: #fff;
+          border-radius: 10px;
+          background-color: #e67e22;
+          transition: transform 0.4s ease-in-out;
+        }
+        .youraccount{
+          display: none;
+        }
+
+
+
+
+
+
+
+
+
+        .grid {
+          display: block;
+        }
+
+        .logo-col,
+        .address-col,
+        .nav-col {
+          flex-direction: column;
+          margin-top: 2rem;
+        }
+
+        .footer-heading {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        .footer-nav li a,
+        .contact,
+        .social {
+          font-size: 1.2rem;
+        }
+
+        .contact p {
+          margin-top: 1rem;
+        }
+
+        .social {
+          font-size: 1.2rem;
+        }
+
+        .social p {
+          margin-top: 0;
+        }
+
+        .qr-code {
+          width: 5rem;
+          height: 5rem;
+        }
+
+        .footer-app-mac,
+        .footer-app-android {
+          height: 2rem;
+        }
+
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="./img/banner/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="./style1.css">
+   <link rel="stylesheet" type="text/css" href="./reponsive.css">
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <title>Đăng nhập</title>
+   <!---------------------------------------------------RESPONSIVE--------------------------------------------------->
+   <style>
+    @media only screen and (max-width: 63.9375em) {
+        .dk{
+            font-size: 30px;
+        }
+        .header img {
+            height: 20rem;
+            width: 25rem;
+          }
+          .main-nav-list {
+              display: none;
+              z-index: 2;
+                flex-direction: row;
+                padding-right: 0;
+                align-items: center;
+                gap: 2px;
+                width: 95%;
+            }
+            #menu-icon {
+              position: fixed;
+              top: 0;
+              right: 0;
+              display: block;
+             }
+
+             #sidebar.sidebar{
+                height: 28rem;
+             }
+          
+             .sidebar.active{
+                height: 28rem;
+             }
+             .sidebar{
+              padding-top: 10px;
+              height: 40%;
+             }
+        
+             .sidebar-link{
+              font-size: 1.5rem;
+             }
+    }
+   </style>
+   <script src="./menuphu.js"></script>
+
+
+   
+</head>
+<body>
+    <!-- -------------------------------Header---------------------------- -->
+
+    <header class="header">
+        <a href="./main.html" class="logo header-logo"><img class="logo header-logo"
+            src="./img/header/HLL_STORE-removebg-preview.png"
+           ></a>
+           <a class="youraccount" href="./taikhoan.html"><img src="./img/admin/noavatar.png" alt="" class="youraccount"></a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+
+                <li><a class="main-nav-link nav-cta" href="./dangky.html">Đăng kí</a></li>
+                <li><a class="main-nav-link nav-cta" href="./dangnhap.html">Đăng nhập</a></li>
+                
+            </ul>
+            <div id="menu-icon">&#9776;</div>
+        </nav>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <ul class="sidebar-list">
+            <li><a class="sidebar-link" href="./aboutus.html">About us</a></li>
+            <li><a class="sidebar-link" href="./lienhe.html">Liên hệ</a></li>
+            <li><a class="sidebar-link" href="./dangky.html">Đăng kí</a></li>
+            <li><a class="sidebar-link" href="./dangnhap.html">Đăng nhập</a></li>
+            <li><a class="sidebar-link" href="./taikhoan.html">Your account</a></li>
+        </ul>
+      </div>
+
+
+    <!-- -------------------------------END Header---------------------------- -->
+
+    <div class="containerdk">
+      <h2 class="dk">Đăng nhập</h2>
+
+
+      <form class="cta-form" method="post" id="loginForm" onsubmit="return validateForm(event)">
+         <div class="form-group">
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" placeholder="Longlyly@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" title="Email phải có định dạng example@gmail.com">
+         </div>
+         
+         <div class="form-group">
+             <label for="password">Mật khẩu (ít nhất 6 ký tự)</label>
+             <input type="password" id="password" name="password" placeholder="********" required minlength="6">
+         </div>
+         <center><button type="submit" class="btdk">Đăng nhập</button></center>
+         <p class="register-link">Bạn chưa có tài khoản? <a href="./dangky.html">Đăng ký ngay</a></p>
+     </form>
+     
+
+     <script>
+      var email = "test1@gmail.com";
+      localStorage.setItem("loggedIn", email);
+     </script>
+
+     
+    </div>
+
+  <footer class="footer" style="clear: both; background-color: white;">
+    <div class="container grid grid--5-cols">
+        <div class="logo-col">
+            <p class="footer-heading">Follow Us</p>
+            <ul class="social-link">
+                <li class="social">
+                    <a href="#">
+                        <ion-icon class="social-icon" name="logo-facebook">Facebook</ion-icon>
+                    </a>
+                    <p>Facebook</p>
+                </li>
+                <li class="social">
+                    <a href="">
+                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                    </a>
+                    <p>Instagram</p>
+                </li>
+                <li class="social">
+                    <a href="">
+                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                    </a>
+                    <p>Linkedin</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav-col">
+            <p class="footer-heading">Contacts</p>
+            <ul class="footer-nav">
+                <li class="footer-link"><a class="fl" href="#">longlyly@gmail.com</a></li>
+                <li class="footer-link"><a class="fl" href="#">HOT LINE: 0398811006</a></li>
+                <li class="footer-link"><a href="#">.</a></li>
+                <li class="footer-link"><a href="#">.</a></li>
+                <li class="footer-link"><a href="#">.</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+                <li class="footer-link"><a class="fl" href="#">Create Account</a></li>
+                <li class="footer-link"><a href="#">Sign in</a></li>
+                <li class="footer-link"><a href="#">IOS App</a></li>
+                <li class="footer-link"><a href="#">Androind App</a></li>
+                <li class="footer-link"><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-col">
+            <p class="footer-heading">Store</p>
+            <ul class="footer-nav">
+                <li class="footer-link"><a href="#">About Us</a></li>
+                <li class="footer-link"><a href="#">HLL Policies</a></li>
+                <li class="footer-link"><a href="#">HLL Careers</a></li>
+                <li class="footer-link"><a href="#">Media Contacts</a></li>
+                <li class="footer-link"><a href="#">Flash Deals</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-col">
+            <p class="footer-heading">HLL Download</p>
+            <table class="footer-app">
+                <tr>
+                    <th> <div class="footer-qr">
+                            <img src="./img/qr/qr-code.png" alt="Mã Qr" class="qr-code">
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <a href="#" class="footer-qr-link">
+                                <img src="./img/qr/app-store.png" alt="App Store" class="footer-app-mac">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-qr-link">
+                                <img src="./img/qr/google-play.png" alt="Google Play" class="footer-app-android">
+                            </a>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</footer>
+  <br><br><br>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        updateHeader();
+    });
+
+    function validateForm(event) {
+        event.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+
+        if (email === 'admin@gmail.com' && password === '12345678') {
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", password);
+            alert("Đăng nhập thành công...Admin");
+            window.location.href = "./admin.html";
+            return;
+        }
+
+        const existingUser = users.find(user => user.email === email && user.password === password);
+        if (existingUser) {
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", password);
+            updateHeader();
+            alert("Đăng nhập thành công...");
+            window.location.href = "./main.html";
+        } else {
+            alert("Sai thông tin, vui lòng nhập lại");
+        }
+    }
+
+    function updateHeader() {
+        const loggedIn = localStorage.getItem("loggedIn");
+        const email = localStorage.getItem("email");
+
+        if (loggedIn === "true" && email) {
+            const loginLinks = document.querySelectorAll(".main-nav .main-nav-link.nav-cta[href='./dangnhap.html']");
+            loginLinks.forEach(link => {
+                link.innerHTML = `<span style="margin-right: 0px; font-size: 13px; font-weight: 700;" class="mail">${email}</span>`;
+                link.href = "#";
+            });
+
+            const logoutLink = document.createElement("li");
+            logoutLink.innerHTML = `<a class="main-nav-link nav-cta" href="#" onclick="logout()">Đăng xuất</a>`;
+            document.querySelector(".main-nav-list").appendChild(logoutLink);
+        }
+    }
+
+    function logout() {
+        localStorage.removeItem("loggedIn");
+        localStorage.removeItem("email");
+        localStorage.removeItem("password");
+        window.location.href = "./dangnhap.html";
+    }
+</script>
+
+
+</body>
+</html>
